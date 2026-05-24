@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router';
-import { ShoppingCart, Menu, X, Search, User } from 'lucide-react';
+import { ShoppingCart, Menu, X, Search, User, Heart } from 'lucide-react';
 import { useCart } from '../context/CartContext';
+import { useWishlist } from '../context/WishlistContext';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -12,6 +13,7 @@ function cn(...inputs: ClassValue[]) {
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { totalItems } = useCart();
+  const { wishlist } = useWishlist();
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -62,6 +64,15 @@ export function Navbar() {
                 <User className="h-5 w-5" />
               </button>
               
+              <Link to="/wishlist" className="relative text-gray-500 hover:text-[#FF6321] transition-colors">
+                <Heart className="h-5 w-5" />
+                {wishlist.length > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-[#FF6321] text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">
+                    {wishlist.length}
+                  </span>
+                )}
+              </Link>
+              
               <Link to="/cart" className="bg-[#FF6321] text-white px-3 py-2 sm:px-5 sm:py-2 rounded-full font-[600] text-[14px] flex items-center gap-2 hover:bg-[#e85a1e] transition-colors">
                 <span>🛒</span>
                 <span className="hidden sm:inline">Cart ({totalItems})</span>
@@ -100,6 +111,21 @@ export function Navbar() {
                 {link.name}
               </NavLink>
             ))}
+            <NavLink
+                to="/wishlist"
+                onClick={() => setIsMenuOpen(false)}
+                className={({ isActive }) =>
+                  cn(
+                    "block px-3 py-2 rounded-md text-base font-medium flex justify-between items-center",
+                    isActive ? "bg-orange-50 text-orange-600" : "text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                  )
+                }
+              >
+                <span>Wishlist</span>
+                <span className="bg-[#FF6321] text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold">
+                  {wishlist.length}
+                </span>
+            </NavLink>
           </div>
         </div>
       )}

@@ -1,19 +1,25 @@
 import { useParams, Link } from 'react-router';
 import { products } from '@/data/products';
 import { useCart } from '@/context/CartContext';
+import { useWishlist } from '@/context/WishlistContext';
+import { useCurrency } from '@/context/CurrencyContext';
 import { Button } from '@/components/ui/Button';
-import { Star, Truck, RotateCcw, ShieldCheck, Check, Info } from 'lucide-react';
+import { Star, Truck, RotateCcw, ShieldCheck, Check, Info, Heart } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export function ProductDetails() {
   const { id } = useParams<{ id: string }>();
   const product = products.find(p => p.id === id);
   const { addItem } = useCart();
+  const { isInWishlist, addToWishlist, removeFromWishlist } = useWishlist();
+  const { formatPrice } = useCurrency();
   
   const [quantity, setQuantity] = useState(1);
   const [activeImage, setActiveImage] = useState(0);
   const [isAdded, setIsAdded] = useState(false);
   const [visitors, setVisitors] = useState(5);
+
+  const inWishlist = product ? isInWishlist(product.id) : false;
 
   // Urgent visitors count simulation
   useEffect(() => {
@@ -39,6 +45,14 @@ export function ProductDetails() {
     addItem(product, quantity);
     setIsAdded(true);
     setTimeout(() => setIsAdded(false), 3000);
+  };
+
+  const handleWishlistToggle = () => {
+    if (inWishlist) {
+      removeFromWishlist(product.id);
+    } else {
+      addToWishlist(product);
+    }
   };
 
   const discount = product.originalPrice 
@@ -67,6 +81,12 @@ export function ProductDetails() {
                   Save {discount}%
                 </span>
               )}
+              <button 
+                onClick={handleWishlistToggle}
+                className="absolute top-4 right-4 z-10 bg-white/80 backdrop-blur-sm p-2.5 rounded-full shadow-sm hover:shadow-md transition-shadow text-gray-400 hover:text-red-500"
+              >
+                <Heart className={`w-6 h-6 ${inWishlist ? 'fill-red-500 text-red-500' : ''}`} />
+              </button>
               <img 
                 src={product.images[activeImage]} 
                 alt={product.name} 
@@ -113,10 +133,10 @@ export function ProductDetails() {
 
             {/* Price */}
             <div className="flex items-end gap-3 mb-6 pb-6 border-b border-gray-100">
-              <span className="text-4xl font-black text-gray-900">{product.displayPrice || `৳${product.price}`}</span>
+              <span className="text-4xl font-black text-gray-900">{product.displayPrice || formatPrice(product.price)}</span>
               {product.originalPrice && (
                 <>
-                  <span className="text-xl text-gray-400 line-through mb-1">৳{product.originalPrice}</span>
+                  <span className="text-xl text-gray-400 line-through mb-1">{formatPrice(product.originalPrice)}</span>
                 </>
               )}
             </div>
@@ -197,6 +217,15 @@ export function ProductDetails() {
                   variant={isAdded ? "secondary" : "primary"}
                 >
                   {isAdded ? "Added to Cart \u2713" : "Add to Cart"}
+                </Button>
+                
+                <Button 
+                  size="lg"
+                  variant="outline"
+                  className="w-14 items-center justify-center p-0 flex-shrink-0"
+                  onClick={handleWishlistToggle}
+                >
+                  <Heart className={`w-6 h-6 ${inWishlist ? 'fill-red-500 text-red-500' : 'text-gray-500 hover:text-[#FF6321]'}`} />
                 </Button>
               </div>
             </div>

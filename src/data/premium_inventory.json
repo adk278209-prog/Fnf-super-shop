@@ -1,52 +1,11 @@
-export interface Review {
-  id: string;
-  author: string;
-  rating: number;
-  date: string;
-  text: string;
-  verified: boolean;
-}
-
-export interface Product {
-  id: string;
-  name: string;
-  description: string;
-  price: number;
-  originalPrice?: number;
-  displayPrice?: string;
-  images: string[];
-  category: string;
-  subCategory?: string;
-  tags: string[];
-  rating: number;
-  reviewsCount: number;
-  stock: number;
-  features?: string[];
-  reviews: Review[];
-}
-
-export const CATEGORIES = [
-  "Fruits & Vegetables",
-  "Dairy & Plant Milk",
-  "Bakery & Bread",
-  "Meat & Seafood",
-  "Beverages",
-  "Pantry & Gourmet",
-  "Snacks"
-];
-
-export const products: Product[] = [
+[
   {
     "id": "item_1",
-    "name": "Sustainable Avocados",
+    "product_name": "Sustainable Avocados",
+    "category": "Fresh Produce",
+    "price_in_usd": 44.51,
     "description": "Experience the finest sustainable avocados, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 44.51,
-    "images": [
-      "assets/images/vegetables.jpg"
-    ],
-    "category": "Fruits & Vegetables",
-    "subCategory": "Fresh Fruits",
-    "tags": [
+    "ai_keywords": [
       "sustainable",
       "avocados",
       "freshproduce",
@@ -54,22 +13,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.5,
-    "reviewsCount": 291,
-    "stock": 155,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?sustainable-avocados"
   },
   {
     "id": "item_2",
-    "name": "Authentic Whole Milk",
+    "product_name": "Authentic Whole Milk",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 21.56,
     "description": "Experience the finest authentic whole milk, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 21.56,
-    "images": [
-      "assets/images/dairy.jpg"
-    ],
-    "category": "Dairy & Plant Milk",
-    "subCategory": "Milk & Cream",
-    "tags": [
+    "ai_keywords": [
       "authentic",
       "whole",
       "dairyeggs",
@@ -77,22 +29,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.5,
-    "reviewsCount": 213,
-    "stock": 156,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?authentic-whole-milk"
   },
   {
     "id": "item_3",
-    "name": "Sustainable French Baguette",
+    "product_name": "Sustainable French Baguette",
+    "category": "Bakery",
+    "price_in_usd": 46.53,
     "description": "Experience the finest sustainable french baguette, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 46.53,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Bakery & Bread",
-    "subCategory": "Sliced Bread",
-    "tags": [
+    "ai_keywords": [
       "sustainable",
       "french",
       "bakery",
@@ -100,22 +45,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.5,
-    "reviewsCount": 331,
-    "stock": 61,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?sustainable-french-baguette"
   },
   {
     "id": "item_4",
-    "name": "Fresh Coffee Beans",
+    "product_name": "Fresh Coffee Beans",
+    "category": "Meat & Seafood",
+    "price_in_usd": 31.71,
     "description": "Experience the finest fresh coffee beans, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 31.71,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
-    "category": "Beverages",
-    "subCategory": "Coffee & Tea",
-    "tags": [
+    "ai_keywords": [
       "fresh",
       "coffee",
       "meatseafood",
@@ -123,22 +61,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.1,
-    "reviewsCount": 85,
-    "stock": 130,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?fresh-coffee-beans"
   },
   {
     "id": "item_5",
-    "name": "Authentic Saffron",
+    "product_name": "Authentic Saffron",
+    "category": "Pantry",
+    "price_in_usd": 26.51,
     "description": "Experience the finest authentic saffron, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 26.51,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Spices & Baking",
-    "tags": [
+    "ai_keywords": [
       "authentic",
       "saffron",
       "pantry",
@@ -146,22 +77,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.7,
-    "reviewsCount": 116,
-    "stock": 120,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?authentic-saffron"
   },
   {
     "id": "item_6",
-    "name": "Premium Truffle Oil",
+    "product_name": "Premium Truffle Oil",
+    "category": "Beverages",
+    "price_in_usd": 16.78,
     "description": "Experience the finest premium truffle oil, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 16.78,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Oils & Vinegars",
-    "tags": [
+    "ai_keywords": [
       "premium",
       "truffle",
       "beverages",
@@ -169,22 +93,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.1,
-    "reviewsCount": 265,
-    "stock": 132,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?premium-truffle-oil"
   },
   {
     "id": "item_7",
-    "name": "Fresh Wagyu Beef",
+    "product_name": "Fresh Wagyu Beef",
+    "category": "Snacks",
+    "price_in_usd": 7.8,
     "description": "Experience the finest fresh wagyu beef, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 7.8,
-    "images": [
-      "assets/images/meat.jpg"
-    ],
-    "category": "Meat & Seafood",
-    "subCategory": "Beef & Lamb",
-    "tags": [
+    "ai_keywords": [
       "fresh",
       "wagyu",
       "snacks",
@@ -192,22 +109,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.4,
-    "reviewsCount": 133,
-    "stock": 172,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?fresh-wagyu-beef"
   },
   {
     "id": "item_8",
-    "name": "Fresh Brie Cheese",
+    "product_name": "Fresh Brie Cheese",
+    "category": "Gourmet",
+    "price_in_usd": 34.26,
     "description": "Experience the finest fresh brie cheese, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 34.26,
-    "images": [
-      "assets/images/dairy.jpg"
-    ],
-    "category": "Dairy & Plant Milk",
-    "subCategory": "Cheese",
-    "tags": [
+    "ai_keywords": [
       "fresh",
       "brie",
       "gourmet",
@@ -215,22 +125,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.6,
-    "reviewsCount": 309,
-    "stock": 193,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?fresh-brie-cheese"
   },
   {
     "id": "item_9",
-    "name": "Gourmet Croissants",
+    "product_name": "Gourmet Croissants",
+    "category": "Fresh Produce",
+    "price_in_usd": 28.52,
     "description": "Experience the finest gourmet croissants, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 28.52,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Bakery & Bread",
-    "subCategory": "Pastries",
-    "tags": [
+    "ai_keywords": [
       "gourmet",
       "croissants",
       "freshproduce",
@@ -238,22 +141,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.5,
-    "reviewsCount": 18,
-    "stock": 94,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?gourmet-croissants"
   },
   {
     "id": "item_10",
-    "name": "Handcrafted Smoked Salmon",
+    "product_name": "Handcrafted Smoked Salmon",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 48.38,
     "description": "Experience the finest handcrafted smoked salmon, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 48.38,
-    "images": [
-      "assets/images/meat.jpg"
-    ],
-    "category": "Meat & Seafood",
-    "subCategory": "Fresh Fish",
-    "tags": [
+    "ai_keywords": [
       "handcrafted",
       "smoked",
       "dairyeggs",
@@ -261,22 +157,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.8,
-    "reviewsCount": 449,
-    "stock": 111,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?handcrafted-smoked-salmon"
   },
   {
     "id": "item_11",
-    "name": "Wild-Caught Macadamia Nuts",
+    "product_name": "Wild-Caught Macadamia Nuts",
+    "category": "Bakery",
+    "price_in_usd": 12.58,
     "description": "Experience the finest wild-caught macadamia nuts, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 12.58,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Snacks",
-    "subCategory": "Nuts & Spreads",
-    "tags": [
+    "ai_keywords": [
       "wild-caught",
       "macadamia",
       "bakery",
@@ -284,22 +173,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 5,
-    "reviewsCount": 404,
-    "stock": 203,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?wild-caught-macadamia-nuts"
   },
   {
     "id": "item_12",
-    "name": "Wild-Caught Manuka Honey",
+    "product_name": "Wild-Caught Manuka Honey",
+    "category": "Meat & Seafood",
+    "price_in_usd": 16.53,
     "description": "Experience the finest wild-caught manuka honey, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 16.53,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Condiments & Spreads",
-    "tags": [
+    "ai_keywords": [
       "wild-caught",
       "manuka",
       "meatseafood",
@@ -307,22 +189,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.9,
-    "reviewsCount": 493,
-    "stock": 58,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?wild-caught-manuka-honey"
   },
   {
     "id": "item_13",
-    "name": "Imported Matcha Powder",
+    "product_name": "Imported Matcha Powder",
+    "category": "Pantry",
+    "price_in_usd": 35.12,
     "description": "Experience the finest imported matcha powder, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 35.12,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
-    "category": "Beverages",
-    "subCategory": "Coffee & Tea",
-    "tags": [
+    "ai_keywords": [
       "imported",
       "matcha",
       "pantry",
@@ -330,22 +205,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.7,
-    "reviewsCount": 173,
-    "stock": 78,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?imported-matcha-powder"
   },
   {
     "id": "item_14",
-    "name": "Handcrafted Extra Virgin Olive Oil",
+    "product_name": "Handcrafted Extra Virgin Olive Oil",
+    "category": "Beverages",
+    "price_in_usd": 7.9,
     "description": "Experience the finest handcrafted extra virgin olive oil, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 7.9,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Oils & Vinegars",
-    "tags": [
+    "ai_keywords": [
       "handcrafted",
       "extra",
       "beverages",
@@ -353,22 +221,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.1,
-    "reviewsCount": 463,
-    "stock": 20,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?handcrafted-extra-virgin-olive-oil"
   },
   {
     "id": "item_15",
-    "name": "Fresh Balsamic Vinegar",
+    "product_name": "Fresh Balsamic Vinegar",
+    "category": "Snacks",
+    "price_in_usd": 44.83,
     "description": "Experience the finest fresh balsamic vinegar, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 44.83,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Oils & Vinegars",
-    "tags": [
+    "ai_keywords": [
       "fresh",
       "balsamic",
       "snacks",
@@ -376,22 +237,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.8,
-    "reviewsCount": 393,
-    "stock": 91,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?fresh-balsamic-vinegar"
   },
   {
     "id": "item_16",
-    "name": "Authentic Almond Butter",
+    "product_name": "Authentic Almond Butter",
+    "category": "Gourmet",
+    "price_in_usd": 39.85,
     "description": "Experience the finest authentic almond butter, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 39.85,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Snacks",
-    "subCategory": "Nuts & Spreads",
-    "tags": [
+    "ai_keywords": [
       "authentic",
       "almond",
       "gourmet",
@@ -399,22 +253,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.2,
-    "reviewsCount": 455,
-    "stock": 48,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?authentic-almond-butter"
   },
   {
     "id": "item_17",
-    "name": "Imported Quinoa",
+    "product_name": "Imported Quinoa",
+    "category": "Fresh Produce",
+    "price_in_usd": 31.24,
     "description": "Experience the finest imported quinoa, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 31.24,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Grains & Pasta",
-    "tags": [
+    "ai_keywords": [
       "imported",
       "quinoa",
       "freshproduce",
@@ -422,22 +269,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.8,
-    "reviewsCount": 496,
-    "stock": 180,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?imported-quinoa"
   },
   {
     "id": "item_18",
-    "name": "Heritage Himalayan Sea Salt",
+    "product_name": "Heritage Himalayan Sea Salt",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 10.04,
     "description": "Experience the finest heritage himalayan sea salt, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 10.04,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Spices & Baking",
-    "tags": [
+    "ai_keywords": [
       "heritage",
       "himalayan",
       "dairyeggs",
@@ -445,22 +285,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.6,
-    "reviewsCount": 243,
-    "stock": 79,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?heritage-himalayan-sea-salt"
   },
   {
     "id": "item_19",
-    "name": "Sustainable Vanilla Beans",
+    "product_name": "Sustainable Vanilla Beans",
+    "category": "Bakery",
+    "price_in_usd": 15.6,
     "description": "Experience the finest sustainable vanilla beans, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 15.6,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Spices & Baking",
-    "tags": [
+    "ai_keywords": [
       "sustainable",
       "vanilla",
       "bakery",
@@ -468,22 +301,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.7,
-    "reviewsCount": 489,
-    "stock": 199,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?sustainable-vanilla-beans"
   },
   {
     "id": "item_20",
-    "name": "Grass-Fed Maple Syrup",
+    "product_name": "Grass-Fed Maple Syrup",
+    "category": "Meat & Seafood",
+    "price_in_usd": 42.36,
     "description": "Experience the finest grass-fed maple syrup, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 42.36,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Condiments & Spreads",
-    "tags": [
+    "ai_keywords": [
       "grass-fed",
       "maple",
       "meatseafood",
@@ -491,22 +317,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.8,
-    "reviewsCount": 81,
-    "stock": 200,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?grass-fed-maple-syrup"
   },
   {
     "id": "item_21",
-    "name": "Handcrafted Kombucha",
+    "product_name": "Handcrafted Kombucha",
+    "category": "Pantry",
+    "price_in_usd": 36.43,
     "description": "Experience the finest handcrafted kombucha, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 36.43,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
-    "category": "Beverages",
-    "subCategory": "Juices",
-    "tags": [
+    "ai_keywords": [
       "handcrafted",
       "kombucha",
       "pantry",
@@ -514,22 +333,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.7,
-    "reviewsCount": 397,
-    "stock": 215,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?handcrafted-kombucha"
   },
   {
     "id": "item_22",
-    "name": "Fresh Dark Chocolate",
+    "product_name": "Fresh Dark Chocolate",
+    "category": "Beverages",
+    "price_in_usd": 20.17,
     "description": "Experience the finest fresh dark chocolate, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 20.17,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Snacks",
-    "subCategory": "Sweets",
-    "tags": [
+    "ai_keywords": [
       "fresh",
       "dark",
       "beverages",
@@ -537,22 +349,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.4,
-    "reviewsCount": 372,
-    "stock": 128,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?fresh-dark-chocolate"
   },
   {
     "id": "item_23",
-    "name": "Heritage Sencha Green Tea",
+    "product_name": "Heritage Sencha Green Tea",
+    "category": "Snacks",
+    "price_in_usd": 6.63,
     "description": "Experience the finest heritage sencha green tea, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 6.63,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
-    "category": "Beverages",
-    "subCategory": "Coffee & Tea",
-    "tags": [
+    "ai_keywords": [
       "heritage",
       "sencha",
       "snacks",
@@ -560,22 +365,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.9,
-    "reviewsCount": 40,
-    "stock": 56,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?heritage-sencha-green-tea"
   },
   {
     "id": "item_24",
-    "name": "Grass-Fed Ribeye Steak",
+    "product_name": "Grass-Fed Ribeye Steak",
+    "category": "Gourmet",
+    "price_in_usd": 20.22,
     "description": "Experience the finest grass-fed ribeye steak, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 20.22,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
-    "category": "Beverages",
-    "subCategory": "Coffee & Tea",
-    "tags": [
+    "ai_keywords": [
       "grass-fed",
       "ribeye",
       "gourmet",
@@ -583,22 +381,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.6,
-    "reviewsCount": 440,
-    "stock": 57,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?grass-fed-ribeye-steak"
   },
   {
     "id": "item_25",
-    "name": "Imported Lobster Tails",
+    "product_name": "Imported Lobster Tails",
+    "category": "Fresh Produce",
+    "price_in_usd": 6.33,
     "description": "Experience the finest imported lobster tails, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 6.33,
-    "images": [
-      "assets/images/meat.jpg"
-    ],
-    "category": "Meat & Seafood",
-    "subCategory": "Fresh Fish",
-    "tags": [
+    "ai_keywords": [
       "imported",
       "lobster",
       "freshproduce",
@@ -606,22 +397,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.9,
-    "reviewsCount": 425,
-    "stock": 76,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?imported-lobster-tails"
   },
   {
     "id": "item_26",
-    "name": "Fresh Beluga Caviar",
+    "product_name": "Fresh Beluga Caviar",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 41.03,
     "description": "Experience the finest fresh beluga caviar, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 41.03,
-    "images": [
-      "assets/images/meat.jpg"
-    ],
-    "category": "Meat & Seafood",
-    "subCategory": "Fresh Fish",
-    "tags": [
+    "ai_keywords": [
       "fresh",
       "beluga",
       "dairyeggs",
@@ -629,22 +413,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.3,
-    "reviewsCount": 448,
-    "stock": 54,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?fresh-beluga-caviar"
   },
   {
     "id": "item_27",
-    "name": "Authentic Prosciutto di Parma",
+    "product_name": "Authentic Prosciutto di Parma",
+    "category": "Bakery",
+    "price_in_usd": 43.86,
     "description": "Experience the finest authentic prosciutto di parma, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 43.86,
-    "images": [
-      "assets/images/meat.jpg"
-    ],
-    "category": "Meat & Seafood",
-    "subCategory": "Beef & Lamb",
-    "tags": [
+    "ai_keywords": [
       "authentic",
       "prosciutto",
       "bakery",
@@ -652,22 +429,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.6,
-    "reviewsCount": 166,
-    "stock": 20,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?authentic-prosciutto-di-parma"
   },
   {
     "id": "item_28",
-    "name": "Organic Parmigiano Reggiano",
+    "product_name": "Organic Parmigiano Reggiano",
+    "category": "Meat & Seafood",
+    "price_in_usd": 7.68,
     "description": "Experience the finest organic parmigiano reggiano, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 7.68,
-    "images": [
-      "assets/images/dairy.jpg"
-    ],
-    "category": "Dairy & Plant Milk",
-    "subCategory": "Cheese",
-    "tags": [
+    "ai_keywords": [
       "organic",
       "parmigiano",
       "meatseafood",
@@ -675,22 +445,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4,
-    "reviewsCount": 161,
-    "stock": 23,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?organic-parmigiano-reggiano"
   },
   {
     "id": "item_29",
-    "name": "Gourmet Basmati Rice",
+    "product_name": "Gourmet Basmati Rice",
+    "category": "Pantry",
+    "price_in_usd": 24.45,
     "description": "Experience the finest gourmet basmati rice, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 24.45,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Grains & Pasta",
-    "tags": [
+    "ai_keywords": [
       "gourmet",
       "basmati",
       "pantry",
@@ -698,22 +461,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.4,
-    "reviewsCount": 246,
-    "stock": 49,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?gourmet-basmati-rice"
   },
   {
     "id": "item_30",
-    "name": "Heritage Linguine Pasta",
+    "product_name": "Heritage Linguine Pasta",
+    "category": "Beverages",
+    "price_in_usd": 39.72,
     "description": "Experience the finest heritage linguine pasta, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 39.72,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Grains & Pasta",
-    "tags": [
+    "ai_keywords": [
       "heritage",
       "linguine",
       "beverages",
@@ -721,22 +477,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.5,
-    "reviewsCount": 11,
-    "stock": 199,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?heritage-linguine-pasta"
   },
   {
     "id": "item_31",
-    "name": "Authentic Basil Pesto",
+    "product_name": "Authentic Basil Pesto",
+    "category": "Snacks",
+    "price_in_usd": 26.07,
     "description": "Experience the finest authentic basil pesto, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 26.07,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Condiments & Spreads",
-    "tags": [
+    "ai_keywords": [
       "authentic",
       "basil",
       "snacks",
@@ -744,22 +493,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4,
-    "reviewsCount": 473,
-    "stock": 112,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?authentic-basil-pesto"
   },
   {
     "id": "item_32",
-    "name": "Organic Oat Milk",
+    "product_name": "Organic Oat Milk",
+    "category": "Gourmet",
+    "price_in_usd": 34.6,
     "description": "Experience the finest organic oat milk, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 34.6,
-    "images": [
-      "assets/images/dairy.jpg"
-    ],
-    "category": "Dairy & Plant Milk",
-    "subCategory": "Milk & Cream",
-    "tags": [
+    "ai_keywords": [
       "organic",
       "oat",
       "gourmet",
@@ -767,22 +509,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.6,
-    "reviewsCount": 21,
-    "stock": 77,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?organic-oat-milk"
   },
   {
     "id": "item_33",
-    "name": "Pure Greek Yogurt",
+    "product_name": "Pure Greek Yogurt",
+    "category": "Fresh Produce",
+    "price_in_usd": 42.38,
     "description": "Experience the finest pure greek yogurt, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 42.38,
-    "images": [
-      "assets/images/dairy.jpg"
-    ],
-    "category": "Dairy & Plant Milk",
-    "subCategory": "Yogurt",
-    "tags": [
+    "ai_keywords": [
       "pure",
       "greek",
       "freshproduce",
@@ -790,22 +525,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.9,
-    "reviewsCount": 178,
-    "stock": 26,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?pure-greek-yogurt"
   },
   {
     "id": "item_34",
-    "name": "Gourmet Blueberries",
+    "product_name": "Gourmet Blueberries",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 27.54,
     "description": "Experience the finest gourmet blueberries, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 27.54,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "gourmet",
       "blueberries",
       "dairyeggs",
@@ -813,22 +541,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.2,
-    "reviewsCount": 334,
-    "stock": 187,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?gourmet-blueberries"
   },
   {
     "id": "item_35",
-    "name": "Artisan Strawberries",
+    "product_name": "Artisan Strawberries",
+    "category": "Bakery",
+    "price_in_usd": 21.83,
     "description": "Experience the finest artisan strawberries, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 21.83,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "artisan",
       "strawberries",
       "bakery",
@@ -836,22 +557,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.5,
-    "reviewsCount": 104,
-    "stock": 58,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?artisan-strawberries"
   },
   {
     "id": "item_36",
-    "name": "Grass-Fed Raspberries",
+    "product_name": "Grass-Fed Raspberries",
+    "category": "Meat & Seafood",
+    "price_in_usd": 10.34,
     "description": "Experience the finest grass-fed raspberries, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 10.34,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "grass-fed",
       "raspberries",
       "meatseafood",
@@ -859,22 +573,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.7,
-    "reviewsCount": 491,
-    "stock": 138,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?grass-fed-raspberries"
   },
   {
     "id": "item_37",
-    "name": "Premium Blackberries",
+    "product_name": "Premium Blackberries",
+    "category": "Pantry",
+    "price_in_usd": 24.29,
     "description": "Experience the finest premium blackberries, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 24.29,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "premium",
       "blackberries",
       "pantry",
@@ -882,22 +589,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.1,
-    "reviewsCount": 171,
-    "stock": 136,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?premium-blackberries"
   },
   {
     "id": "item_38",
-    "name": "Gourmet Alphonso Mangoes",
+    "product_name": "Gourmet Alphonso Mangoes",
+    "category": "Beverages",
+    "price_in_usd": 22.48,
     "description": "Experience the finest gourmet alphonso mangoes, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 22.48,
-    "images": [
-      "assets/images/vegetables.jpg"
-    ],
-    "category": "Fruits & Vegetables",
-    "subCategory": "Fresh Fruits",
-    "tags": [
+    "ai_keywords": [
       "gourmet",
       "alphonso",
       "beverages",
@@ -905,22 +605,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.5,
-    "reviewsCount": 83,
-    "stock": 182,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?gourmet-alphonso-mangoes"
   },
   {
     "id": "item_39",
-    "name": "Handcrafted Pineapple",
+    "product_name": "Handcrafted Pineapple",
+    "category": "Snacks",
+    "price_in_usd": 19.08,
     "description": "Experience the finest handcrafted pineapple, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 19.08,
-    "images": [
-      "assets/images/vegetables.jpg"
-    ],
-    "category": "Fruits & Vegetables",
-    "subCategory": "Fresh Fruits",
-    "tags": [
+    "ai_keywords": [
       "handcrafted",
       "pineapple",
       "snacks",
@@ -928,22 +621,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.7,
-    "reviewsCount": 509,
-    "stock": 87,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?handcrafted-pineapple"
   },
   {
     "id": "item_40",
-    "name": "Heritage Pomegranates",
+    "product_name": "Heritage Pomegranates",
+    "category": "Gourmet",
+    "price_in_usd": 26.73,
     "description": "Experience the finest heritage pomegranates, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 26.73,
-    "images": [
-      "assets/images/vegetables.jpg"
-    ],
-    "category": "Fruits & Vegetables",
-    "subCategory": "Fresh Fruits",
-    "tags": [
+    "ai_keywords": [
       "heritage",
       "pomegranates",
       "gourmet",
@@ -951,22 +637,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.2,
-    "reviewsCount": 318,
-    "stock": 128,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?heritage-pomegranates"
   },
   {
     "id": "item_41",
-    "name": "Premium Coconut Water",
+    "product_name": "Premium Coconut Water",
+    "category": "Fresh Produce",
+    "price_in_usd": 38.67,
     "description": "Experience the finest premium coconut water, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 38.67,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
-    "category": "Beverages",
-    "subCategory": "Water",
-    "tags": [
+    "ai_keywords": [
       "premium",
       "coconut",
       "freshproduce",
@@ -974,22 +653,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.8,
-    "reviewsCount": 41,
-    "stock": 99,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?premium-coconut-water"
   },
   {
     "id": "item_42",
-    "name": "Authentic Sparkling Mineral Water",
+    "product_name": "Authentic Sparkling Mineral Water",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 9.25,
     "description": "Experience the finest authentic sparkling mineral water, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 9.25,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
-    "category": "Beverages",
-    "subCategory": "Water",
-    "tags": [
+    "ai_keywords": [
       "authentic",
       "sparkling",
       "dairyeggs",
@@ -997,22 +669,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.8,
-    "reviewsCount": 215,
-    "stock": 68,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?authentic-sparkling-mineral-water"
   },
   {
     "id": "item_43",
-    "name": "Fresh Orange Juice",
+    "product_name": "Fresh Orange Juice",
+    "category": "Bakery",
+    "price_in_usd": 5.16,
     "description": "Experience the finest fresh orange juice, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 5.16,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
-    "category": "Beverages",
-    "subCategory": "Juices",
-    "tags": [
+    "ai_keywords": [
       "fresh",
       "orange",
       "bakery",
@@ -1020,22 +685,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4,
-    "reviewsCount": 17,
-    "stock": 200,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?fresh-orange-juice"
   },
   {
     "id": "item_44",
-    "name": "Organic Apple Cider",
+    "product_name": "Organic Apple Cider",
+    "category": "Meat & Seafood",
+    "price_in_usd": 39.17,
     "description": "Experience the finest organic apple cider, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 39.17,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
-    "category": "Beverages",
-    "subCategory": "Juices",
-    "tags": [
+    "ai_keywords": [
       "organic",
       "apple",
       "meatseafood",
@@ -1043,22 +701,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.7,
-    "reviewsCount": 208,
-    "stock": 152,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?organic-apple-cider"
   },
   {
     "id": "item_45",
-    "name": "Grass-Fed Ginger Kombucha",
+    "product_name": "Grass-Fed Ginger Kombucha",
+    "category": "Pantry",
+    "price_in_usd": 23.84,
     "description": "Experience the finest grass-fed ginger kombucha, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 23.84,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
-    "category": "Beverages",
-    "subCategory": "Juices",
-    "tags": [
+    "ai_keywords": [
       "grass-fed",
       "ginger",
       "pantry",
@@ -1066,22 +717,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.2,
-    "reviewsCount": 139,
-    "stock": 171,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?grass-fed-ginger-kombucha"
   },
   {
     "id": "item_46",
-    "name": "Heritage Macadamia Milk",
+    "product_name": "Heritage Macadamia Milk",
+    "category": "Beverages",
+    "price_in_usd": 17.97,
     "description": "Experience the finest heritage macadamia milk, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 17.97,
-    "images": [
-      "assets/images/dairy.jpg"
-    ],
-    "category": "Dairy & Plant Milk",
-    "subCategory": "Milk & Cream",
-    "tags": [
+    "ai_keywords": [
       "heritage",
       "macadamia",
       "beverages",
@@ -1089,22 +733,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.5,
-    "reviewsCount": 449,
-    "stock": 207,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?heritage-macadamia-milk"
   },
   {
     "id": "item_47",
-    "name": "Fresh Soy Milk",
+    "product_name": "Fresh Soy Milk",
+    "category": "Snacks",
+    "price_in_usd": 37.06,
     "description": "Experience the finest fresh soy milk, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 37.06,
-    "images": [
-      "assets/images/dairy.jpg"
-    ],
-    "category": "Dairy & Plant Milk",
-    "subCategory": "Milk & Cream",
-    "tags": [
+    "ai_keywords": [
       "fresh",
       "soy",
       "snacks",
@@ -1112,22 +749,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4,
-    "reviewsCount": 136,
-    "stock": 154,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?fresh-soy-milk"
   },
   {
     "id": "item_48",
-    "name": "Farm-Fresh Cultured Butter",
+    "product_name": "Farm-Fresh Cultured Butter",
+    "category": "Gourmet",
+    "price_in_usd": 38,
     "description": "Experience the finest farm-fresh cultured butter, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 38,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Snacks",
-    "subCategory": "Nuts & Spreads",
-    "tags": [
+    "ai_keywords": [
       "farm-fresh",
       "cultured",
       "gourmet",
@@ -1135,22 +765,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.6,
-    "reviewsCount": 295,
-    "stock": 198,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?farm-fresh-cultured-butter"
   },
   {
     "id": "item_49",
-    "name": "Grass-Fed Free-Range Eggs",
+    "product_name": "Grass-Fed Free-Range Eggs",
+    "category": "Fresh Produce",
+    "price_in_usd": 47.46,
     "description": "Experience the finest grass-fed free-range eggs, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 47.46,
-    "images": [
-      "assets/images/dairy.jpg"
-    ],
-    "category": "Dairy & Plant Milk",
-    "subCategory": "Eggs",
-    "tags": [
+    "ai_keywords": [
       "grass-fed",
       "free-range",
       "freshproduce",
@@ -1158,22 +781,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.9,
-    "reviewsCount": 125,
-    "stock": 42,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?grass-fed-free-range-eggs"
   },
   {
     "id": "item_50",
-    "name": "Organic Sourdough Boule",
+    "product_name": "Organic Sourdough Boule",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 15.66,
     "description": "Experience the finest organic sourdough boule, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 15.66,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Bakery & Bread",
-    "subCategory": "Sliced Bread",
-    "tags": [
+    "ai_keywords": [
       "organic",
       "sourdough",
       "dairyeggs",
@@ -1181,22 +797,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.9,
-    "reviewsCount": 251,
-    "stock": 179,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?organic-sourdough-boule"
   },
   {
     "id": "item_51",
-    "name": "Fresh Ciabatta Bread",
+    "product_name": "Fresh Ciabatta Bread",
+    "category": "Bakery",
+    "price_in_usd": 23.98,
     "description": "Experience the finest fresh ciabatta bread, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 23.98,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Bakery & Bread",
-    "subCategory": "Sliced Bread",
-    "tags": [
+    "ai_keywords": [
       "fresh",
       "ciabatta",
       "bakery",
@@ -1204,22 +813,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.6,
-    "reviewsCount": 246,
-    "stock": 196,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?fresh-ciabatta-bread"
   },
   {
     "id": "item_52",
-    "name": "Grass-Fed Focaccia",
+    "product_name": "Grass-Fed Focaccia",
+    "category": "Meat & Seafood",
+    "price_in_usd": 5.46,
     "description": "Experience the finest grass-fed focaccia, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 5.46,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "grass-fed",
       "focaccia",
       "meatseafood",
@@ -1227,22 +829,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.9,
-    "reviewsCount": 313,
-    "stock": 111,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?grass-fed-focaccia"
   },
   {
     "id": "item_53",
-    "name": "Imported Pita Bread",
+    "product_name": "Imported Pita Bread",
+    "category": "Pantry",
+    "price_in_usd": 37.54,
     "description": "Experience the finest imported pita bread, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 37.54,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "imported",
       "pita",
       "pantry",
@@ -1250,22 +845,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.5,
-    "reviewsCount": 372,
-    "stock": 54,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?imported-pita-bread"
   },
   {
     "id": "item_54",
-    "name": "Aged Corn Tortillas",
+    "product_name": "Aged Corn Tortillas",
+    "category": "Beverages",
+    "price_in_usd": 27.67,
     "description": "Experience the finest aged corn tortillas, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 27.67,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "aged",
       "corn",
       "beverages",
@@ -1273,22 +861,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4,
-    "reviewsCount": 261,
-    "stock": 102,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-corn-tortillas"
   },
   {
     "id": "item_55",
-    "name": "Sustainable Classic Hummus",
-    "description": "Experience the finest sustainable classic hummus, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 11.14,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
+    "product_name": "Sustainable Classic Hummus",
     "category": "Snacks",
-    "subCategory": "Nuts & Spreads",
-    "tags": [
+    "price_in_usd": 11.14,
+    "description": "Experience the finest sustainable classic hummus, carefully sourced for international standards to bring unparalleled quality to your table.",
+    "ai_keywords": [
       "sustainable",
       "classic",
       "snacks",
@@ -1296,22 +877,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.5,
-    "reviewsCount": 494,
-    "stock": 64,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?sustainable-classic-hummus"
   },
   {
     "id": "item_56",
-    "name": "Imported Spicy Guacamole",
+    "product_name": "Imported Spicy Guacamole",
+    "category": "Gourmet",
+    "price_in_usd": 6.72,
     "description": "Experience the finest imported spicy guacamole, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 6.72,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "imported",
       "spicy",
       "gourmet",
@@ -1319,22 +893,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.2,
-    "reviewsCount": 422,
-    "stock": 97,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?imported-spicy-guacamole"
   },
   {
     "id": "item_57",
-    "name": "Farm-Fresh Roasted Salsa",
+    "product_name": "Farm-Fresh Roasted Salsa",
+    "category": "Fresh Produce",
+    "price_in_usd": 5.26,
     "description": "Experience the finest farm-fresh roasted salsa, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 5.26,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "farm-fresh",
       "roasted",
       "freshproduce",
@@ -1342,22 +909,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.6,
-    "reviewsCount": 15,
-    "stock": 71,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?farm-fresh-roasted-salsa"
   },
   {
     "id": "item_58",
-    "name": "Gourmet Pecans",
+    "product_name": "Gourmet Pecans",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 5.97,
     "description": "Experience the finest gourmet pecans, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 5.97,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Snacks",
-    "subCategory": "Nuts & Spreads",
-    "tags": [
+    "ai_keywords": [
       "gourmet",
       "pecans",
       "dairyeggs",
@@ -1365,22 +925,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.2,
-    "reviewsCount": 438,
-    "stock": 145,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?gourmet-pecans"
   },
   {
     "id": "item_59",
-    "name": "Handcrafted English Walnuts",
+    "product_name": "Handcrafted English Walnuts",
+    "category": "Bakery",
+    "price_in_usd": 48.1,
     "description": "Experience the finest handcrafted english walnuts, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 48.1,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Snacks",
-    "subCategory": "Nuts & Spreads",
-    "tags": [
+    "ai_keywords": [
       "handcrafted",
       "english",
       "bakery",
@@ -1388,22 +941,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.6,
-    "reviewsCount": 489,
-    "stock": 123,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?handcrafted-english-walnuts"
   },
   {
     "id": "item_60",
-    "name": "Pure Roasted Cashews",
+    "product_name": "Pure Roasted Cashews",
+    "category": "Meat & Seafood",
+    "price_in_usd": 28.05,
     "description": "Experience the finest pure roasted cashews, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 28.05,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Snacks",
-    "subCategory": "Nuts & Spreads",
-    "tags": [
+    "ai_keywords": [
       "pure",
       "roasted",
       "meatseafood",
@@ -1411,22 +957,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.6,
-    "reviewsCount": 110,
-    "stock": 48,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?pure-roasted-cashews"
   },
   {
     "id": "item_61",
-    "name": "Wild-Caught Shelled Pistachios",
+    "product_name": "Wild-Caught Shelled Pistachios",
+    "category": "Pantry",
+    "price_in_usd": 24.37,
     "description": "Experience the finest wild-caught shelled pistachios, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 24.37,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "wild-caught",
       "shelled",
       "pantry",
@@ -1434,22 +973,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.6,
-    "reviewsCount": 43,
-    "stock": 58,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?wild-caught-shelled-pistachios"
   },
   {
     "id": "item_62",
-    "name": "Wild-Caught Marcona Almonds",
+    "product_name": "Wild-Caught Marcona Almonds",
+    "category": "Beverages",
+    "price_in_usd": 18.82,
     "description": "Experience the finest wild-caught marcona almonds, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 18.82,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "wild-caught",
       "marcona",
       "beverages",
@@ -1457,22 +989,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.5,
-    "reviewsCount": 369,
-    "stock": 211,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?wild-caught-marcona-almonds"
   },
   {
     "id": "item_63",
-    "name": "Artisan Chia Seeds",
+    "product_name": "Artisan Chia Seeds",
+    "category": "Snacks",
+    "price_in_usd": 40.34,
     "description": "Experience the finest artisan chia seeds, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 40.34,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "artisan",
       "chia",
       "snacks",
@@ -1480,22 +1005,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4,
-    "reviewsCount": 134,
-    "stock": 27,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?artisan-chia-seeds"
   },
   {
     "id": "item_64",
-    "name": "Imported Golden Flax Seeds",
+    "product_name": "Imported Golden Flax Seeds",
+    "category": "Gourmet",
+    "price_in_usd": 30.24,
     "description": "Experience the finest imported golden flax seeds, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 30.24,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "imported",
       "golden",
       "gourmet",
@@ -1503,22 +1021,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.4,
-    "reviewsCount": 157,
-    "stock": 204,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?imported-golden-flax-seeds"
   },
   {
     "id": "item_65",
-    "name": "Heritage Hemp Hearts",
+    "product_name": "Heritage Hemp Hearts",
+    "category": "Fresh Produce",
+    "price_in_usd": 37.78,
     "description": "Experience the finest heritage hemp hearts, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 37.78,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "heritage",
       "hemp",
       "freshproduce",
@@ -1526,22 +1037,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.8,
-    "reviewsCount": 383,
-    "stock": 32,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?heritage-hemp-hearts"
   },
   {
     "id": "item_66",
-    "name": "Pure Rolled Oats",
+    "product_name": "Pure Rolled Oats",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 39.36,
     "description": "Experience the finest pure rolled oats, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 39.36,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "pure",
       "rolled",
       "dairyeggs",
@@ -1549,22 +1053,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.9,
-    "reviewsCount": 245,
-    "stock": 187,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?pure-rolled-oats"
   },
   {
     "id": "item_67",
-    "name": "Premium Artisan Granola",
+    "product_name": "Premium Artisan Granola",
+    "category": "Bakery",
+    "price_in_usd": 22.05,
     "description": "Experience the finest premium artisan granola, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 22.05,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "premium",
       "artisan",
       "bakery",
@@ -1572,22 +1069,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4,
-    "reviewsCount": 441,
-    "stock": 69,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?premium-artisan-granola"
   },
   {
     "id": "item_68",
-    "name": "Imported Swiss Muesli",
+    "product_name": "Imported Swiss Muesli",
+    "category": "Meat & Seafood",
+    "price_in_usd": 25.39,
     "description": "Experience the finest imported swiss muesli, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 25.39,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "imported",
       "swiss",
       "meatseafood",
@@ -1595,22 +1085,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4,
-    "reviewsCount": 423,
-    "stock": 51,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?imported-swiss-muesli"
   },
   {
     "id": "item_69",
-    "name": "Premium Vegan Protein Powder",
+    "product_name": "Premium Vegan Protein Powder",
+    "category": "Pantry",
+    "price_in_usd": 46.71,
     "description": "Experience the finest premium vegan protein powder, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 46.71,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "premium",
       "vegan",
       "pantry",
@@ -1618,22 +1101,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.2,
-    "reviewsCount": 78,
-    "stock": 52,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?premium-vegan-protein-powder"
   },
   {
     "id": "item_70",
-    "name": "Premium Collagen Peptides",
+    "product_name": "Premium Collagen Peptides",
+    "category": "Beverages",
+    "price_in_usd": 30.08,
     "description": "Experience the finest premium collagen peptides, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 30.08,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "premium",
       "collagen",
       "beverages",
@@ -1641,22 +1117,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 5,
-    "reviewsCount": 237,
-    "stock": 175,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?premium-collagen-peptides"
   },
   {
     "id": "item_71",
-    "name": "Authentic Dried Goji Berries",
+    "product_name": "Authentic Dried Goji Berries",
+    "category": "Snacks",
+    "price_in_usd": 15.46,
     "description": "Experience the finest authentic dried goji berries, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 15.46,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "authentic",
       "dried",
       "snacks",
@@ -1664,22 +1133,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.7,
-    "reviewsCount": 412,
-    "stock": 100,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?authentic-dried-goji-berries"
   },
   {
     "id": "item_72",
-    "name": "Handcrafted Acai Puree",
+    "product_name": "Handcrafted Acai Puree",
+    "category": "Gourmet",
+    "price_in_usd": 36.48,
     "description": "Experience the finest handcrafted acai puree, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 36.48,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "handcrafted",
       "acai",
       "gourmet",
@@ -1687,22 +1149,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.8,
-    "reviewsCount": 42,
-    "stock": 107,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?handcrafted-acai-puree"
   },
   {
     "id": "item_73",
-    "name": "Wild-Caught Pink Dragon Fruit",
+    "product_name": "Wild-Caught Pink Dragon Fruit",
+    "category": "Fresh Produce",
+    "price_in_usd": 37.05,
     "description": "Experience the finest wild-caught pink dragon fruit, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 37.05,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "wild-caught",
       "pink",
       "freshproduce",
@@ -1710,22 +1165,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.3,
-    "reviewsCount": 25,
-    "stock": 185,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?wild-caught-pink-dragon-fruit"
   },
   {
     "id": "item_74",
-    "name": "Gourmet Golden Kiwi",
+    "product_name": "Gourmet Golden Kiwi",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 27.24,
     "description": "Experience the finest gourmet golden kiwi, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 27.24,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "gourmet",
       "golden",
       "dairyeggs",
@@ -1733,22 +1181,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.5,
-    "reviewsCount": 113,
-    "stock": 94,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?gourmet-golden-kiwi"
   },
   {
     "id": "item_75",
-    "name": "Cold-Pressed Papaya",
+    "product_name": "Cold-Pressed Papaya",
+    "category": "Bakery",
+    "price_in_usd": 22.3,
     "description": "Experience the finest cold-pressed papaya, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 22.3,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "cold-pressed",
       "papaya",
       "bakery",
@@ -1756,22 +1197,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.4,
-    "reviewsCount": 157,
-    "stock": 132,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?cold-pressed-papaya"
   },
   {
     "id": "item_76",
-    "name": "Premium Key Lime",
+    "product_name": "Premium Key Lime",
+    "category": "Meat & Seafood",
+    "price_in_usd": 43.1,
     "description": "Experience the finest premium key lime, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 43.1,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "premium",
       "key",
       "meatseafood",
@@ -1779,22 +1213,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4,
-    "reviewsCount": 278,
-    "stock": 47,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?premium-key-lime"
   },
   {
     "id": "item_77",
-    "name": "Sustainable Meyer Lemon",
+    "product_name": "Sustainable Meyer Lemon",
+    "category": "Pantry",
+    "price_in_usd": 34.74,
     "description": "Experience the finest sustainable meyer lemon, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 34.74,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "sustainable",
       "meyer",
       "pantry",
@@ -1802,22 +1229,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 5,
-    "reviewsCount": 348,
-    "stock": 55,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?sustainable-meyer-lemon"
   },
   {
     "id": "item_78",
-    "name": "Authentic Ruby Red Grapefruit",
+    "product_name": "Authentic Ruby Red Grapefruit",
+    "category": "Beverages",
+    "price_in_usd": 7.41,
     "description": "Experience the finest authentic ruby red grapefruit, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 7.41,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "authentic",
       "ruby",
       "beverages",
@@ -1825,22 +1245,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.7,
-    "reviewsCount": 357,
-    "stock": 97,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?authentic-ruby-red-grapefruit"
   },
   {
     "id": "item_79",
-    "name": "Heritage Navel Oranges",
+    "product_name": "Heritage Navel Oranges",
+    "category": "Snacks",
+    "price_in_usd": 48.75,
     "description": "Experience the finest heritage navel oranges, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 48.75,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "heritage",
       "navel",
       "snacks",
@@ -1848,22 +1261,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.2,
-    "reviewsCount": 120,
-    "stock": 137,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?heritage-navel-oranges"
   },
   {
     "id": "item_80",
-    "name": "Imported Fuji Apples",
+    "product_name": "Imported Fuji Apples",
+    "category": "Gourmet",
+    "price_in_usd": 23.64,
     "description": "Experience the finest imported fuji apples, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 23.64,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "imported",
       "fuji",
       "gourmet",
@@ -1871,22 +1277,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.2,
-    "reviewsCount": 416,
-    "stock": 196,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?imported-fuji-apples"
   },
   {
     "id": "item_81",
-    "name": "Handcrafted Bartlett Pears",
+    "product_name": "Handcrafted Bartlett Pears",
+    "category": "Fresh Produce",
+    "price_in_usd": 48.49,
     "description": "Experience the finest handcrafted bartlett pears, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 48.49,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "handcrafted",
       "bartlett",
       "freshproduce",
@@ -1894,22 +1293,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.2,
-    "reviewsCount": 398,
-    "stock": 36,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?handcrafted-bartlett-pears"
   },
   {
     "id": "item_82",
-    "name": "Imported White Peaches",
+    "product_name": "Imported White Peaches",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 32.85,
     "description": "Experience the finest imported white peaches, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 32.85,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "imported",
       "white",
       "dairyeggs",
@@ -1917,22 +1309,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.9,
-    "reviewsCount": 494,
-    "stock": 148,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?imported-white-peaches"
   },
   {
     "id": "item_83",
-    "name": "Authentic Black Plums",
+    "product_name": "Authentic Black Plums",
+    "category": "Bakery",
+    "price_in_usd": 27.93,
     "description": "Experience the finest authentic black plums, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 27.93,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "authentic",
       "black",
       "bakery",
@@ -1940,22 +1325,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.8,
-    "reviewsCount": 145,
-    "stock": 68,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?authentic-black-plums"
   },
   {
     "id": "item_84",
-    "name": "Pure Bing Cherries",
+    "product_name": "Pure Bing Cherries",
+    "category": "Meat & Seafood",
+    "price_in_usd": 18.26,
     "description": "Experience the finest pure bing cherries, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 18.26,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "pure",
       "bing",
       "meatseafood",
@@ -1963,22 +1341,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.7,
-    "reviewsCount": 294,
-    "stock": 174,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?pure-bing-cherries"
   },
   {
     "id": "item_85",
-    "name": "Organic Concord Grapes",
+    "product_name": "Organic Concord Grapes",
+    "category": "Pantry",
+    "price_in_usd": 28.58,
     "description": "Experience the finest organic concord grapes, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 28.58,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "organic",
       "concord",
       "pantry",
@@ -1986,22 +1357,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.1,
-    "reviewsCount": 117,
-    "stock": 156,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?organic-concord-grapes"
   },
   {
     "id": "item_86",
-    "name": "Aged Heirloom Tomatoes",
+    "product_name": "Aged Heirloom Tomatoes",
+    "category": "Beverages",
+    "price_in_usd": 25.76,
     "description": "Experience the finest aged heirloom tomatoes, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 25.76,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "aged",
       "heirloom",
       "beverages",
@@ -2009,22 +1373,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 5,
-    "reviewsCount": 128,
-    "stock": 98,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-heirloom-tomatoes"
   },
   {
     "id": "item_87",
-    "name": "Cold-Pressed Bell Peppers",
+    "product_name": "Cold-Pressed Bell Peppers",
+    "category": "Snacks",
+    "price_in_usd": 23.87,
     "description": "Experience the finest cold-pressed bell peppers, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 23.87,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "cold-pressed",
       "bell",
       "snacks",
@@ -2032,22 +1389,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.5,
-    "reviewsCount": 219,
-    "stock": 197,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?cold-pressed-bell-peppers"
   },
   {
     "id": "item_88",
-    "name": "Farm-Fresh English Cucumbers",
+    "product_name": "Farm-Fresh English Cucumbers",
+    "category": "Gourmet",
+    "price_in_usd": 11.68,
     "description": "Experience the finest farm-fresh english cucumbers, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 11.68,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "farm-fresh",
       "english",
       "gourmet",
@@ -2055,22 +1405,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.7,
-    "reviewsCount": 99,
-    "stock": 70,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?farm-fresh-english-cucumbers"
   },
   {
     "id": "item_89",
-    "name": "Heritage Zucchini",
+    "product_name": "Heritage Zucchini",
+    "category": "Fresh Produce",
+    "price_in_usd": 37.96,
     "description": "Experience the finest heritage zucchini, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 37.96,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "heritage",
       "zucchini",
       "freshproduce",
@@ -2078,22 +1421,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.4,
-    "reviewsCount": 95,
-    "stock": 210,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?heritage-zucchini"
   },
   {
     "id": "item_90",
-    "name": "Authentic Japanese Eggplant",
+    "product_name": "Authentic Japanese Eggplant",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 35.41,
     "description": "Experience the finest authentic japanese eggplant, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 35.41,
-    "images": [
-      "assets/images/dairy.jpg"
-    ],
-    "category": "Dairy & Plant Milk",
-    "subCategory": "Eggs",
-    "tags": [
+    "ai_keywords": [
       "authentic",
       "japanese",
       "dairyeggs",
@@ -2101,22 +1437,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.7,
-    "reviewsCount": 72,
-    "stock": 116,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?authentic-japanese-eggplant"
   },
   {
     "id": "item_91",
-    "name": "Wild-Caught Rainbow Carrots",
+    "product_name": "Wild-Caught Rainbow Carrots",
+    "category": "Bakery",
+    "price_in_usd": 13.63,
     "description": "Experience the finest wild-caught rainbow carrots, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 13.63,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "wild-caught",
       "rainbow",
       "bakery",
@@ -2124,22 +1453,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.5,
-    "reviewsCount": 190,
-    "stock": 54,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?wild-caught-rainbow-carrots"
   },
   {
     "id": "item_92",
-    "name": "Heritage Russet Potatoes",
+    "product_name": "Heritage Russet Potatoes",
+    "category": "Meat & Seafood",
+    "price_in_usd": 17.5,
     "description": "Experience the finest heritage russet potatoes, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 17.5,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "heritage",
       "russet",
       "meatseafood",
@@ -2147,22 +1469,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.2,
-    "reviewsCount": 349,
-    "stock": 198,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?heritage-russet-potatoes"
   },
   {
     "id": "item_93",
-    "name": "Premium Japanese Sweet Potatoes",
+    "product_name": "Premium Japanese Sweet Potatoes",
+    "category": "Pantry",
+    "price_in_usd": 7.32,
     "description": "Experience the finest premium japanese sweet potatoes, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 7.32,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "premium",
       "japanese",
       "pantry",
@@ -2170,22 +1485,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.8,
-    "reviewsCount": 327,
-    "stock": 192,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?premium-japanese-sweet-potatoes"
   },
   {
     "id": "item_94",
-    "name": "Cold-Pressed Vidalia Onions",
+    "product_name": "Cold-Pressed Vidalia Onions",
+    "category": "Beverages",
+    "price_in_usd": 34.16,
     "description": "Experience the finest cold-pressed vidalia onions, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 34.16,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "cold-pressed",
       "vidalia",
       "beverages",
@@ -2193,22 +1501,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.9,
-    "reviewsCount": 122,
-    "stock": 112,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?cold-pressed-vidalia-onions"
   },
   {
     "id": "item_95",
-    "name": "Sustainable Black Garlic",
+    "product_name": "Sustainable Black Garlic",
+    "category": "Snacks",
+    "price_in_usd": 19.17,
     "description": "Experience the finest sustainable black garlic, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 19.17,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "sustainable",
       "black",
       "snacks",
@@ -2216,22 +1517,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.8,
-    "reviewsCount": 448,
-    "stock": 55,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?sustainable-black-garlic"
   },
   {
     "id": "item_96",
-    "name": "Heritage Fresh Ginger",
+    "product_name": "Heritage Fresh Ginger",
+    "category": "Gourmet",
+    "price_in_usd": 16.29,
     "description": "Experience the finest heritage fresh ginger, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 16.29,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "heritage",
       "fresh",
       "gourmet",
@@ -2239,22 +1533,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.8,
-    "reviewsCount": 310,
-    "stock": 79,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?heritage-fresh-ginger"
   },
   {
     "id": "item_97",
-    "name": "Farm-Fresh Turmeric Root",
+    "product_name": "Farm-Fresh Turmeric Root",
+    "category": "Fresh Produce",
+    "price_in_usd": 10.34,
     "description": "Experience the finest farm-fresh turmeric root, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 10.34,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "farm-fresh",
       "turmeric",
       "freshproduce",
@@ -2262,22 +1549,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.3,
-    "reviewsCount": 242,
-    "stock": 83,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?farm-fresh-turmeric-root"
   },
   {
     "id": "item_98",
-    "name": "Pure Cilantro",
+    "product_name": "Pure Cilantro",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 21.91,
     "description": "Experience the finest pure cilantro, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 21.91,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "pure",
       "cilantro",
       "dairyeggs",
@@ -2285,22 +1565,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.5,
-    "reviewsCount": 213,
-    "stock": 183,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?pure-cilantro"
   },
   {
     "id": "item_99",
-    "name": "Artisan Italian Parsley",
+    "product_name": "Artisan Italian Parsley",
+    "category": "Bakery",
+    "price_in_usd": 8.77,
     "description": "Experience the finest artisan italian parsley, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 8.77,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "artisan",
       "italian",
       "bakery",
@@ -2308,22 +1581,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.6,
-    "reviewsCount": 241,
-    "stock": 134,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?artisan-italian-parsley"
   },
   {
     "id": "item_100",
-    "name": "Aged Thai Basil",
+    "product_name": "Aged Thai Basil",
+    "category": "Meat & Seafood",
+    "price_in_usd": 30.82,
     "description": "Experience the finest aged thai basil, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 30.82,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "aged",
       "thai",
       "meatseafood",
@@ -2331,22 +1597,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.9,
-    "reviewsCount": 445,
-    "stock": 87,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-thai-basil"
   },
   {
     "id": "item_101",
-    "name": "Aged Avocados",
+    "product_name": "Aged Avocados",
+    "category": "Pantry",
+    "price_in_usd": 28.66,
     "description": "Experience the finest aged avocados, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 28.66,
-    "images": [
-      "assets/images/vegetables.jpg"
-    ],
-    "category": "Fruits & Vegetables",
-    "subCategory": "Fresh Fruits",
-    "tags": [
+    "ai_keywords": [
       "aged",
       "avocados",
       "pantry",
@@ -2354,22 +1613,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.4,
-    "reviewsCount": 277,
-    "stock": 67,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-avocados"
   },
   {
     "id": "item_102",
-    "name": "Fresh Whole Milk",
+    "product_name": "Fresh Whole Milk",
+    "category": "Beverages",
+    "price_in_usd": 41.31,
     "description": "Experience the finest fresh whole milk, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 41.31,
-    "images": [
-      "assets/images/dairy.jpg"
-    ],
-    "category": "Dairy & Plant Milk",
-    "subCategory": "Milk & Cream",
-    "tags": [
+    "ai_keywords": [
       "fresh",
       "whole",
       "beverages",
@@ -2377,22 +1629,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.3,
-    "reviewsCount": 28,
-    "stock": 147,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?fresh-whole-milk"
   },
   {
     "id": "item_103",
-    "name": "Fresh French Baguette",
+    "product_name": "Fresh French Baguette",
+    "category": "Snacks",
+    "price_in_usd": 39.82,
     "description": "Experience the finest fresh french baguette, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 39.82,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Bakery & Bread",
-    "subCategory": "Sliced Bread",
-    "tags": [
+    "ai_keywords": [
       "fresh",
       "french",
       "snacks",
@@ -2400,22 +1645,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.9,
-    "reviewsCount": 221,
-    "stock": 55,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?fresh-french-baguette"
   },
   {
     "id": "item_104",
-    "name": "Aged Coffee Beans",
+    "product_name": "Aged Coffee Beans",
+    "category": "Gourmet",
+    "price_in_usd": 29.33,
     "description": "Experience the finest aged coffee beans, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 29.33,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
-    "category": "Beverages",
-    "subCategory": "Coffee & Tea",
-    "tags": [
+    "ai_keywords": [
       "aged",
       "coffee",
       "gourmet",
@@ -2423,22 +1661,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.9,
-    "reviewsCount": 197,
-    "stock": 137,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-coffee-beans"
   },
   {
     "id": "item_105",
-    "name": "Gourmet Saffron",
+    "product_name": "Gourmet Saffron",
+    "category": "Fresh Produce",
+    "price_in_usd": 34.36,
     "description": "Experience the finest gourmet saffron, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 34.36,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Spices & Baking",
-    "tags": [
+    "ai_keywords": [
       "gourmet",
       "saffron",
       "freshproduce",
@@ -2446,22 +1677,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.6,
-    "reviewsCount": 311,
-    "stock": 211,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?gourmet-saffron"
   },
   {
     "id": "item_106",
-    "name": "Authentic Truffle Oil",
+    "product_name": "Authentic Truffle Oil",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 9.22,
     "description": "Experience the finest authentic truffle oil, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 9.22,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Oils & Vinegars",
-    "tags": [
+    "ai_keywords": [
       "authentic",
       "truffle",
       "dairyeggs",
@@ -2469,22 +1693,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.9,
-    "reviewsCount": 60,
-    "stock": 98,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?authentic-truffle-oil"
   },
   {
     "id": "item_107",
-    "name": "Aged Wagyu Beef",
+    "product_name": "Aged Wagyu Beef",
+    "category": "Bakery",
+    "price_in_usd": 45.63,
     "description": "Experience the finest aged wagyu beef, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 45.63,
-    "images": [
-      "assets/images/meat.jpg"
-    ],
-    "category": "Meat & Seafood",
-    "subCategory": "Beef & Lamb",
-    "tags": [
+    "ai_keywords": [
       "aged",
       "wagyu",
       "bakery",
@@ -2492,22 +1709,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.7,
-    "reviewsCount": 161,
-    "stock": 78,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-wagyu-beef"
   },
   {
     "id": "item_108",
-    "name": "Handcrafted Brie Cheese",
+    "product_name": "Handcrafted Brie Cheese",
+    "category": "Meat & Seafood",
+    "price_in_usd": 21.56,
     "description": "Experience the finest handcrafted brie cheese, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 21.56,
-    "images": [
-      "assets/images/dairy.jpg"
-    ],
-    "category": "Dairy & Plant Milk",
-    "subCategory": "Cheese",
-    "tags": [
+    "ai_keywords": [
       "handcrafted",
       "brie",
       "meatseafood",
@@ -2515,22 +1725,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4,
-    "reviewsCount": 197,
-    "stock": 32,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?handcrafted-brie-cheese"
   },
   {
     "id": "item_109",
-    "name": "Aged Croissants",
+    "product_name": "Aged Croissants",
+    "category": "Pantry",
+    "price_in_usd": 10.55,
     "description": "Experience the finest aged croissants, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 10.55,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Bakery & Bread",
-    "subCategory": "Pastries",
-    "tags": [
+    "ai_keywords": [
       "aged",
       "croissants",
       "pantry",
@@ -2538,22 +1741,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.6,
-    "reviewsCount": 80,
-    "stock": 138,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-croissants"
   },
   {
     "id": "item_110",
-    "name": "Premium Smoked Salmon",
+    "product_name": "Premium Smoked Salmon",
+    "category": "Beverages",
+    "price_in_usd": 14.78,
     "description": "Experience the finest premium smoked salmon, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 14.78,
-    "images": [
-      "assets/images/meat.jpg"
-    ],
-    "category": "Meat & Seafood",
-    "subCategory": "Fresh Fish",
-    "tags": [
+    "ai_keywords": [
       "premium",
       "smoked",
       "beverages",
@@ -2561,22 +1757,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.5,
-    "reviewsCount": 244,
-    "stock": 89,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?premium-smoked-salmon"
   },
   {
     "id": "item_111",
-    "name": "Authentic Macadamia Nuts",
-    "description": "Experience the finest authentic macadamia nuts, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 48.28,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
+    "product_name": "Authentic Macadamia Nuts",
     "category": "Snacks",
-    "subCategory": "Nuts & Spreads",
-    "tags": [
+    "price_in_usd": 48.28,
+    "description": "Experience the finest authentic macadamia nuts, carefully sourced for international standards to bring unparalleled quality to your table.",
+    "ai_keywords": [
       "authentic",
       "macadamia",
       "snacks",
@@ -2584,22 +1773,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.8,
-    "reviewsCount": 315,
-    "stock": 137,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?authentic-macadamia-nuts"
   },
   {
     "id": "item_112",
-    "name": "Cold-Pressed Manuka Honey",
+    "product_name": "Cold-Pressed Manuka Honey",
+    "category": "Gourmet",
+    "price_in_usd": 15.16,
     "description": "Experience the finest cold-pressed manuka honey, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 15.16,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Condiments & Spreads",
-    "tags": [
+    "ai_keywords": [
       "cold-pressed",
       "manuka",
       "gourmet",
@@ -2607,22 +1789,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.5,
-    "reviewsCount": 408,
-    "stock": 82,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?cold-pressed-manuka-honey"
   },
   {
     "id": "item_113",
-    "name": "Authentic Matcha Powder",
+    "product_name": "Authentic Matcha Powder",
+    "category": "Fresh Produce",
+    "price_in_usd": 22.77,
     "description": "Experience the finest authentic matcha powder, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 22.77,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
-    "category": "Beverages",
-    "subCategory": "Coffee & Tea",
-    "tags": [
+    "ai_keywords": [
       "authentic",
       "matcha",
       "freshproduce",
@@ -2630,22 +1805,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.4,
-    "reviewsCount": 160,
-    "stock": 213,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?authentic-matcha-powder"
   },
   {
     "id": "item_114",
-    "name": "Pure Extra Virgin Olive Oil",
+    "product_name": "Pure Extra Virgin Olive Oil",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 40.53,
     "description": "Experience the finest pure extra virgin olive oil, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 40.53,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Oils & Vinegars",
-    "tags": [
+    "ai_keywords": [
       "pure",
       "extra",
       "dairyeggs",
@@ -2653,22 +1821,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4,
-    "reviewsCount": 213,
-    "stock": 39,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?pure-extra-virgin-olive-oil"
   },
   {
     "id": "item_115",
-    "name": "Authentic Balsamic Vinegar",
+    "product_name": "Authentic Balsamic Vinegar",
+    "category": "Bakery",
+    "price_in_usd": 29.67,
     "description": "Experience the finest authentic balsamic vinegar, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 29.67,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Oils & Vinegars",
-    "tags": [
+    "ai_keywords": [
       "authentic",
       "balsamic",
       "bakery",
@@ -2676,22 +1837,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.8,
-    "reviewsCount": 297,
-    "stock": 130,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?authentic-balsamic-vinegar"
   },
   {
     "id": "item_116",
-    "name": "Farm-Fresh Almond Butter",
+    "product_name": "Farm-Fresh Almond Butter",
+    "category": "Meat & Seafood",
+    "price_in_usd": 31.67,
     "description": "Experience the finest farm-fresh almond butter, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 31.67,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Snacks",
-    "subCategory": "Nuts & Spreads",
-    "tags": [
+    "ai_keywords": [
       "farm-fresh",
       "almond",
       "meatseafood",
@@ -2699,22 +1853,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.4,
-    "reviewsCount": 260,
-    "stock": 144,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?farm-fresh-almond-butter"
   },
   {
     "id": "item_117",
-    "name": "Organic Quinoa",
+    "product_name": "Organic Quinoa",
+    "category": "Pantry",
+    "price_in_usd": 13.44,
     "description": "Experience the finest organic quinoa, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 13.44,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Grains & Pasta",
-    "tags": [
+    "ai_keywords": [
       "organic",
       "quinoa",
       "pantry",
@@ -2722,22 +1869,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.9,
-    "reviewsCount": 106,
-    "stock": 185,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?organic-quinoa"
   },
   {
     "id": "item_118",
-    "name": "Cold-Pressed Himalayan Sea Salt",
+    "product_name": "Cold-Pressed Himalayan Sea Salt",
+    "category": "Beverages",
+    "price_in_usd": 21.59,
     "description": "Experience the finest cold-pressed himalayan sea salt, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 21.59,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Spices & Baking",
-    "tags": [
+    "ai_keywords": [
       "cold-pressed",
       "himalayan",
       "beverages",
@@ -2745,22 +1885,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.4,
-    "reviewsCount": 222,
-    "stock": 93,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?cold-pressed-himalayan-sea-salt"
   },
   {
     "id": "item_119",
-    "name": "Cold-Pressed Vanilla Beans",
+    "product_name": "Cold-Pressed Vanilla Beans",
+    "category": "Snacks",
+    "price_in_usd": 27.16,
     "description": "Experience the finest cold-pressed vanilla beans, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 27.16,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Spices & Baking",
-    "tags": [
+    "ai_keywords": [
       "cold-pressed",
       "vanilla",
       "snacks",
@@ -2768,22 +1901,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.4,
-    "reviewsCount": 40,
-    "stock": 148,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?cold-pressed-vanilla-beans"
   },
   {
     "id": "item_120",
-    "name": "Wild-Caught Maple Syrup",
+    "product_name": "Wild-Caught Maple Syrup",
+    "category": "Gourmet",
+    "price_in_usd": 49.04,
     "description": "Experience the finest wild-caught maple syrup, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 49.04,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Condiments & Spreads",
-    "tags": [
+    "ai_keywords": [
       "wild-caught",
       "maple",
       "gourmet",
@@ -2791,22 +1917,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.6,
-    "reviewsCount": 249,
-    "stock": 135,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?wild-caught-maple-syrup"
   },
   {
     "id": "item_121",
-    "name": "Organic Kombucha",
+    "product_name": "Organic Kombucha",
+    "category": "Fresh Produce",
+    "price_in_usd": 34.45,
     "description": "Experience the finest organic kombucha, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 34.45,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
-    "category": "Beverages",
-    "subCategory": "Juices",
-    "tags": [
+    "ai_keywords": [
       "organic",
       "kombucha",
       "freshproduce",
@@ -2814,22 +1933,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.7,
-    "reviewsCount": 492,
-    "stock": 217,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?organic-kombucha"
   },
   {
     "id": "item_122",
-    "name": "Pure Dark Chocolate",
+    "product_name": "Pure Dark Chocolate",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 44.51,
     "description": "Experience the finest pure dark chocolate, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 44.51,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Snacks",
-    "subCategory": "Sweets",
-    "tags": [
+    "ai_keywords": [
       "pure",
       "dark",
       "dairyeggs",
@@ -2837,22 +1949,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.1,
-    "reviewsCount": 14,
-    "stock": 58,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?pure-dark-chocolate"
   },
   {
     "id": "item_123",
-    "name": "Aged Sencha Green Tea",
+    "product_name": "Aged Sencha Green Tea",
+    "category": "Bakery",
+    "price_in_usd": 30.39,
     "description": "Experience the finest aged sencha green tea, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 30.39,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
-    "category": "Beverages",
-    "subCategory": "Coffee & Tea",
-    "tags": [
+    "ai_keywords": [
       "aged",
       "sencha",
       "bakery",
@@ -2860,22 +1965,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.6,
-    "reviewsCount": 229,
-    "stock": 157,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-sencha-green-tea"
   },
   {
     "id": "item_124",
-    "name": "Farm-Fresh Ribeye Steak",
+    "product_name": "Farm-Fresh Ribeye Steak",
+    "category": "Meat & Seafood",
+    "price_in_usd": 17.53,
     "description": "Experience the finest farm-fresh ribeye steak, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 17.53,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
-    "category": "Beverages",
-    "subCategory": "Coffee & Tea",
-    "tags": [
+    "ai_keywords": [
       "farm-fresh",
       "ribeye",
       "meatseafood",
@@ -2883,22 +1981,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.6,
-    "reviewsCount": 83,
-    "stock": 26,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?farm-fresh-ribeye-steak"
   },
   {
     "id": "item_125",
-    "name": "Wild-Caught Lobster Tails",
+    "product_name": "Wild-Caught Lobster Tails",
+    "category": "Pantry",
+    "price_in_usd": 12.9,
     "description": "Experience the finest wild-caught lobster tails, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 12.9,
-    "images": [
-      "assets/images/meat.jpg"
-    ],
-    "category": "Meat & Seafood",
-    "subCategory": "Fresh Fish",
-    "tags": [
+    "ai_keywords": [
       "wild-caught",
       "lobster",
       "pantry",
@@ -2906,22 +1997,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.6,
-    "reviewsCount": 320,
-    "stock": 72,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?wild-caught-lobster-tails"
   },
   {
     "id": "item_126",
-    "name": "Premium Beluga Caviar",
+    "product_name": "Premium Beluga Caviar",
+    "category": "Beverages",
+    "price_in_usd": 35.3,
     "description": "Experience the finest premium beluga caviar, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 35.3,
-    "images": [
-      "assets/images/meat.jpg"
-    ],
-    "category": "Meat & Seafood",
-    "subCategory": "Fresh Fish",
-    "tags": [
+    "ai_keywords": [
       "premium",
       "beluga",
       "beverages",
@@ -2929,22 +2013,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4,
-    "reviewsCount": 291,
-    "stock": 22,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?premium-beluga-caviar"
   },
   {
     "id": "item_127",
-    "name": "Aged Prosciutto di Parma",
+    "product_name": "Aged Prosciutto di Parma",
+    "category": "Snacks",
+    "price_in_usd": 7.17,
     "description": "Experience the finest aged prosciutto di parma, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 7.17,
-    "images": [
-      "assets/images/meat.jpg"
-    ],
-    "category": "Meat & Seafood",
-    "subCategory": "Beef & Lamb",
-    "tags": [
+    "ai_keywords": [
       "aged",
       "prosciutto",
       "snacks",
@@ -2952,22 +2029,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.3,
-    "reviewsCount": 276,
-    "stock": 103,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-prosciutto-di-parma"
   },
   {
     "id": "item_128",
-    "name": "Fresh Parmigiano Reggiano",
+    "product_name": "Fresh Parmigiano Reggiano",
+    "category": "Gourmet",
+    "price_in_usd": 32,
     "description": "Experience the finest fresh parmigiano reggiano, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 32,
-    "images": [
-      "assets/images/dairy.jpg"
-    ],
-    "category": "Dairy & Plant Milk",
-    "subCategory": "Cheese",
-    "tags": [
+    "ai_keywords": [
       "fresh",
       "parmigiano",
       "gourmet",
@@ -2975,22 +2045,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.9,
-    "reviewsCount": 372,
-    "stock": 53,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?fresh-parmigiano-reggiano"
   },
   {
     "id": "item_129",
-    "name": "Premium Basmati Rice",
+    "product_name": "Premium Basmati Rice",
+    "category": "Fresh Produce",
+    "price_in_usd": 12.45,
     "description": "Experience the finest premium basmati rice, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 12.45,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Grains & Pasta",
-    "tags": [
+    "ai_keywords": [
       "premium",
       "basmati",
       "freshproduce",
@@ -2998,22 +2061,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.9,
-    "reviewsCount": 182,
-    "stock": 199,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?premium-basmati-rice"
   },
   {
     "id": "item_130",
-    "name": "Fresh Linguine Pasta",
+    "product_name": "Fresh Linguine Pasta",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 33.03,
     "description": "Experience the finest fresh linguine pasta, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 33.03,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Grains & Pasta",
-    "tags": [
+    "ai_keywords": [
       "fresh",
       "linguine",
       "dairyeggs",
@@ -3021,22 +2077,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.9,
-    "reviewsCount": 387,
-    "stock": 133,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?fresh-linguine-pasta"
   },
   {
     "id": "item_131",
-    "name": "Gourmet Basil Pesto",
+    "product_name": "Gourmet Basil Pesto",
+    "category": "Bakery",
+    "price_in_usd": 20.37,
     "description": "Experience the finest gourmet basil pesto, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 20.37,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Condiments & Spreads",
-    "tags": [
+    "ai_keywords": [
       "gourmet",
       "basil",
       "bakery",
@@ -3044,22 +2093,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.5,
-    "reviewsCount": 437,
-    "stock": 26,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?gourmet-basil-pesto"
   },
   {
     "id": "item_132",
-    "name": "Fresh Oat Milk",
+    "product_name": "Fresh Oat Milk",
+    "category": "Meat & Seafood",
+    "price_in_usd": 43.5,
     "description": "Experience the finest fresh oat milk, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 43.5,
-    "images": [
-      "assets/images/dairy.jpg"
-    ],
-    "category": "Dairy & Plant Milk",
-    "subCategory": "Milk & Cream",
-    "tags": [
+    "ai_keywords": [
       "fresh",
       "oat",
       "meatseafood",
@@ -3067,22 +2109,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.7,
-    "reviewsCount": 430,
-    "stock": 160,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?fresh-oat-milk"
   },
   {
     "id": "item_133",
-    "name": "Pure Greek Yogurt",
+    "product_name": "Pure Greek Yogurt",
+    "category": "Pantry",
+    "price_in_usd": 5.87,
     "description": "Experience the finest pure greek yogurt, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 5.87,
-    "images": [
-      "assets/images/dairy.jpg"
-    ],
-    "category": "Dairy & Plant Milk",
-    "subCategory": "Yogurt",
-    "tags": [
+    "ai_keywords": [
       "pure",
       "greek",
       "pantry",
@@ -3090,22 +2125,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.2,
-    "reviewsCount": 310,
-    "stock": 201,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?pure-greek-yogurt"
   },
   {
     "id": "item_134",
-    "name": "Aged Blueberries",
+    "product_name": "Aged Blueberries",
+    "category": "Beverages",
+    "price_in_usd": 13.89,
     "description": "Experience the finest aged blueberries, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 13.89,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "aged",
       "blueberries",
       "beverages",
@@ -3113,22 +2141,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 5,
-    "reviewsCount": 482,
-    "stock": 162,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-blueberries"
   },
   {
     "id": "item_135",
-    "name": "Wild-Caught Strawberries",
+    "product_name": "Wild-Caught Strawberries",
+    "category": "Snacks",
+    "price_in_usd": 43.72,
     "description": "Experience the finest wild-caught strawberries, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 43.72,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "wild-caught",
       "strawberries",
       "snacks",
@@ -3136,22 +2157,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.9,
-    "reviewsCount": 482,
-    "stock": 119,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?wild-caught-strawberries"
   },
   {
     "id": "item_136",
-    "name": "Aged Raspberries",
+    "product_name": "Aged Raspberries",
+    "category": "Gourmet",
+    "price_in_usd": 9.81,
     "description": "Experience the finest aged raspberries, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 9.81,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "aged",
       "raspberries",
       "gourmet",
@@ -3159,22 +2173,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.3,
-    "reviewsCount": 53,
-    "stock": 67,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-raspberries"
   },
   {
     "id": "item_137",
-    "name": "Premium Blackberries",
+    "product_name": "Premium Blackberries",
+    "category": "Fresh Produce",
+    "price_in_usd": 19.09,
     "description": "Experience the finest premium blackberries, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 19.09,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "premium",
       "blackberries",
       "freshproduce",
@@ -3182,22 +2189,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.9,
-    "reviewsCount": 441,
-    "stock": 165,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?premium-blackberries"
   },
   {
     "id": "item_138",
-    "name": "Artisan Alphonso Mangoes",
+    "product_name": "Artisan Alphonso Mangoes",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 40.68,
     "description": "Experience the finest artisan alphonso mangoes, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 40.68,
-    "images": [
-      "assets/images/vegetables.jpg"
-    ],
-    "category": "Fruits & Vegetables",
-    "subCategory": "Fresh Fruits",
-    "tags": [
+    "ai_keywords": [
       "artisan",
       "alphonso",
       "dairyeggs",
@@ -3205,22 +2205,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.7,
-    "reviewsCount": 318,
-    "stock": 182,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?artisan-alphonso-mangoes"
   },
   {
     "id": "item_139",
-    "name": "Gourmet Pineapple",
+    "product_name": "Gourmet Pineapple",
+    "category": "Bakery",
+    "price_in_usd": 38.47,
     "description": "Experience the finest gourmet pineapple, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 38.47,
-    "images": [
-      "assets/images/vegetables.jpg"
-    ],
-    "category": "Fruits & Vegetables",
-    "subCategory": "Fresh Fruits",
-    "tags": [
+    "ai_keywords": [
       "gourmet",
       "pineapple",
       "bakery",
@@ -3228,22 +2221,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.1,
-    "reviewsCount": 487,
-    "stock": 109,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?gourmet-pineapple"
   },
   {
     "id": "item_140",
-    "name": "Imported Pomegranates",
+    "product_name": "Imported Pomegranates",
+    "category": "Meat & Seafood",
+    "price_in_usd": 42.49,
     "description": "Experience the finest imported pomegranates, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 42.49,
-    "images": [
-      "assets/images/vegetables.jpg"
-    ],
-    "category": "Fruits & Vegetables",
-    "subCategory": "Fresh Fruits",
-    "tags": [
+    "ai_keywords": [
       "imported",
       "pomegranates",
       "meatseafood",
@@ -3251,22 +2237,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.8,
-    "reviewsCount": 439,
-    "stock": 175,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?imported-pomegranates"
   },
   {
     "id": "item_141",
-    "name": "Grass-Fed Coconut Water",
+    "product_name": "Grass-Fed Coconut Water",
+    "category": "Pantry",
+    "price_in_usd": 9.7,
     "description": "Experience the finest grass-fed coconut water, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 9.7,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
-    "category": "Beverages",
-    "subCategory": "Water",
-    "tags": [
+    "ai_keywords": [
       "grass-fed",
       "coconut",
       "pantry",
@@ -3274,22 +2253,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.6,
-    "reviewsCount": 76,
-    "stock": 211,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?grass-fed-coconut-water"
   },
   {
     "id": "item_142",
-    "name": "Fresh Sparkling Mineral Water",
-    "description": "Experience the finest fresh sparkling mineral water, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 44.86,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
+    "product_name": "Fresh Sparkling Mineral Water",
     "category": "Beverages",
-    "subCategory": "Water",
-    "tags": [
+    "price_in_usd": 44.86,
+    "description": "Experience the finest fresh sparkling mineral water, carefully sourced for international standards to bring unparalleled quality to your table.",
+    "ai_keywords": [
       "fresh",
       "sparkling",
       "beverages",
@@ -3297,22 +2269,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.3,
-    "reviewsCount": 243,
-    "stock": 133,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?fresh-sparkling-mineral-water"
   },
   {
     "id": "item_143",
-    "name": "Grass-Fed Orange Juice",
+    "product_name": "Grass-Fed Orange Juice",
+    "category": "Snacks",
+    "price_in_usd": 47.76,
     "description": "Experience the finest grass-fed orange juice, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 47.76,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
-    "category": "Beverages",
-    "subCategory": "Juices",
-    "tags": [
+    "ai_keywords": [
       "grass-fed",
       "orange",
       "snacks",
@@ -3320,22 +2285,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.6,
-    "reviewsCount": 219,
-    "stock": 217,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?grass-fed-orange-juice"
   },
   {
     "id": "item_144",
-    "name": "Wild-Caught Apple Cider",
+    "product_name": "Wild-Caught Apple Cider",
+    "category": "Gourmet",
+    "price_in_usd": 26.96,
     "description": "Experience the finest wild-caught apple cider, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 26.96,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
-    "category": "Beverages",
-    "subCategory": "Juices",
-    "tags": [
+    "ai_keywords": [
       "wild-caught",
       "apple",
       "gourmet",
@@ -3343,22 +2301,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4,
-    "reviewsCount": 342,
-    "stock": 146,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?wild-caught-apple-cider"
   },
   {
     "id": "item_145",
-    "name": "Aged Ginger Kombucha",
+    "product_name": "Aged Ginger Kombucha",
+    "category": "Fresh Produce",
+    "price_in_usd": 40.46,
     "description": "Experience the finest aged ginger kombucha, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 40.46,
-    "images": [
-      "assets/images/beverages.jpg"
-    ],
-    "category": "Beverages",
-    "subCategory": "Juices",
-    "tags": [
+    "ai_keywords": [
       "aged",
       "ginger",
       "freshproduce",
@@ -3366,22 +2317,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.6,
-    "reviewsCount": 468,
-    "stock": 29,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-ginger-kombucha"
   },
   {
     "id": "item_146",
-    "name": "Gourmet Macadamia Milk",
+    "product_name": "Gourmet Macadamia Milk",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 34,
     "description": "Experience the finest gourmet macadamia milk, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 34,
-    "images": [
-      "assets/images/dairy.jpg"
-    ],
-    "category": "Dairy & Plant Milk",
-    "subCategory": "Milk & Cream",
-    "tags": [
+    "ai_keywords": [
       "gourmet",
       "macadamia",
       "dairyeggs",
@@ -3389,22 +2333,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.3,
-    "reviewsCount": 439,
-    "stock": 201,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?gourmet-macadamia-milk"
   },
   {
     "id": "item_147",
-    "name": "Fresh Soy Milk",
+    "product_name": "Fresh Soy Milk",
+    "category": "Bakery",
+    "price_in_usd": 6.65,
     "description": "Experience the finest fresh soy milk, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 6.65,
-    "images": [
-      "assets/images/dairy.jpg"
-    ],
-    "category": "Dairy & Plant Milk",
-    "subCategory": "Milk & Cream",
-    "tags": [
+    "ai_keywords": [
       "fresh",
       "soy",
       "bakery",
@@ -3412,22 +2349,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.2,
-    "reviewsCount": 227,
-    "stock": 147,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?fresh-soy-milk"
   },
   {
     "id": "item_148",
-    "name": "Sustainable Cultured Butter",
+    "product_name": "Sustainable Cultured Butter",
+    "category": "Meat & Seafood",
+    "price_in_usd": 24.49,
     "description": "Experience the finest sustainable cultured butter, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 24.49,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Snacks",
-    "subCategory": "Nuts & Spreads",
-    "tags": [
+    "ai_keywords": [
       "sustainable",
       "cultured",
       "meatseafood",
@@ -3435,22 +2365,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.8,
-    "reviewsCount": 205,
-    "stock": 184,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?sustainable-cultured-butter"
   },
   {
     "id": "item_149",
-    "name": "Wild-Caught Free-Range Eggs",
+    "product_name": "Wild-Caught Free-Range Eggs",
+    "category": "Pantry",
+    "price_in_usd": 45.73,
     "description": "Experience the finest wild-caught free-range eggs, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 45.73,
-    "images": [
-      "assets/images/dairy.jpg"
-    ],
-    "category": "Dairy & Plant Milk",
-    "subCategory": "Eggs",
-    "tags": [
+    "ai_keywords": [
       "wild-caught",
       "free-range",
       "pantry",
@@ -3458,22 +2381,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.6,
-    "reviewsCount": 500,
-    "stock": 50,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?wild-caught-free-range-eggs"
   },
   {
     "id": "item_150",
-    "name": "Farm-Fresh Sourdough Boule",
+    "product_name": "Farm-Fresh Sourdough Boule",
+    "category": "Beverages",
+    "price_in_usd": 42.18,
     "description": "Experience the finest farm-fresh sourdough boule, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 42.18,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Bakery & Bread",
-    "subCategory": "Sliced Bread",
-    "tags": [
+    "ai_keywords": [
       "farm-fresh",
       "sourdough",
       "beverages",
@@ -3481,22 +2397,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.7,
-    "reviewsCount": 285,
-    "stock": 62,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?farm-fresh-sourdough-boule"
   },
   {
     "id": "item_151",
-    "name": "Heritage Ciabatta Bread",
+    "product_name": "Heritage Ciabatta Bread",
+    "category": "Snacks",
+    "price_in_usd": 47.41,
     "description": "Experience the finest heritage ciabatta bread, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 47.41,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Bakery & Bread",
-    "subCategory": "Sliced Bread",
-    "tags": [
+    "ai_keywords": [
       "heritage",
       "ciabatta",
       "snacks",
@@ -3504,22 +2413,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.1,
-    "reviewsCount": 53,
-    "stock": 145,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?heritage-ciabatta-bread"
   },
   {
     "id": "item_152",
-    "name": "Premium Focaccia",
+    "product_name": "Premium Focaccia",
+    "category": "Gourmet",
+    "price_in_usd": 44.62,
     "description": "Experience the finest premium focaccia, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 44.62,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "premium",
       "focaccia",
       "gourmet",
@@ -3527,22 +2429,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.4,
-    "reviewsCount": 499,
-    "stock": 78,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?premium-focaccia"
   },
   {
     "id": "item_153",
-    "name": "Aged Pita Bread",
+    "product_name": "Aged Pita Bread",
+    "category": "Fresh Produce",
+    "price_in_usd": 42.9,
     "description": "Experience the finest aged pita bread, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 42.9,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "aged",
       "pita",
       "freshproduce",
@@ -3550,22 +2445,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.2,
-    "reviewsCount": 12,
-    "stock": 138,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-pita-bread"
   },
   {
     "id": "item_154",
-    "name": "Heritage Corn Tortillas",
+    "product_name": "Heritage Corn Tortillas",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 21.04,
     "description": "Experience the finest heritage corn tortillas, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 21.04,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "heritage",
       "corn",
       "dairyeggs",
@@ -3573,22 +2461,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.7,
-    "reviewsCount": 23,
-    "stock": 39,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?heritage-corn-tortillas"
   },
   {
     "id": "item_155",
-    "name": "Cold-Pressed Classic Hummus",
+    "product_name": "Cold-Pressed Classic Hummus",
+    "category": "Bakery",
+    "price_in_usd": 36.16,
     "description": "Experience the finest cold-pressed classic hummus, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 36.16,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Snacks",
-    "subCategory": "Nuts & Spreads",
-    "tags": [
+    "ai_keywords": [
       "cold-pressed",
       "classic",
       "bakery",
@@ -3596,22 +2477,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.5,
-    "reviewsCount": 253,
-    "stock": 118,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?cold-pressed-classic-hummus"
   },
   {
     "id": "item_156",
-    "name": "Pure Spicy Guacamole",
+    "product_name": "Pure Spicy Guacamole",
+    "category": "Meat & Seafood",
+    "price_in_usd": 44.9,
     "description": "Experience the finest pure spicy guacamole, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 44.9,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "pure",
       "spicy",
       "meatseafood",
@@ -3619,22 +2493,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.9,
-    "reviewsCount": 320,
-    "stock": 157,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?pure-spicy-guacamole"
   },
   {
     "id": "item_157",
-    "name": "Aged Roasted Salsa",
+    "product_name": "Aged Roasted Salsa",
+    "category": "Pantry",
+    "price_in_usd": 39.28,
     "description": "Experience the finest aged roasted salsa, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 39.28,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "aged",
       "roasted",
       "pantry",
@@ -3642,22 +2509,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.9,
-    "reviewsCount": 348,
-    "stock": 105,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-roasted-salsa"
   },
   {
     "id": "item_158",
-    "name": "Authentic Pecans",
+    "product_name": "Authentic Pecans",
+    "category": "Beverages",
+    "price_in_usd": 18.59,
     "description": "Experience the finest authentic pecans, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 18.59,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Snacks",
-    "subCategory": "Nuts & Spreads",
-    "tags": [
+    "ai_keywords": [
       "authentic",
       "pecans",
       "beverages",
@@ -3665,22 +2525,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.1,
-    "reviewsCount": 181,
-    "stock": 21,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?authentic-pecans"
   },
   {
     "id": "item_159",
-    "name": "Aged English Walnuts",
-    "description": "Experience the finest aged english walnuts, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 17.99,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
+    "product_name": "Aged English Walnuts",
     "category": "Snacks",
-    "subCategory": "Nuts & Spreads",
-    "tags": [
+    "price_in_usd": 17.99,
+    "description": "Experience the finest aged english walnuts, carefully sourced for international standards to bring unparalleled quality to your table.",
+    "ai_keywords": [
       "aged",
       "english",
       "snacks",
@@ -3688,22 +2541,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.6,
-    "reviewsCount": 300,
-    "stock": 134,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-english-walnuts"
   },
   {
     "id": "item_160",
-    "name": "Gourmet Roasted Cashews",
+    "product_name": "Gourmet Roasted Cashews",
+    "category": "Gourmet",
+    "price_in_usd": 18.39,
     "description": "Experience the finest gourmet roasted cashews, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 18.39,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Snacks",
-    "subCategory": "Nuts & Spreads",
-    "tags": [
+    "ai_keywords": [
       "gourmet",
       "roasted",
       "gourmet",
@@ -3711,22 +2557,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.5,
-    "reviewsCount": 131,
-    "stock": 37,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?gourmet-roasted-cashews"
   },
   {
     "id": "item_161",
-    "name": "Imported Shelled Pistachios",
+    "product_name": "Imported Shelled Pistachios",
+    "category": "Fresh Produce",
+    "price_in_usd": 14,
     "description": "Experience the finest imported shelled pistachios, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 14,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "imported",
       "shelled",
       "freshproduce",
@@ -3734,22 +2573,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.8,
-    "reviewsCount": 391,
-    "stock": 94,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?imported-shelled-pistachios"
   },
   {
     "id": "item_162",
-    "name": "Authentic Marcona Almonds",
+    "product_name": "Authentic Marcona Almonds",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 34.95,
     "description": "Experience the finest authentic marcona almonds, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 34.95,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "authentic",
       "marcona",
       "dairyeggs",
@@ -3757,22 +2589,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.9,
-    "reviewsCount": 263,
-    "stock": 132,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?authentic-marcona-almonds"
   },
   {
     "id": "item_163",
-    "name": "Wild-Caught Chia Seeds",
+    "product_name": "Wild-Caught Chia Seeds",
+    "category": "Bakery",
+    "price_in_usd": 11.96,
     "description": "Experience the finest wild-caught chia seeds, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 11.96,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "wild-caught",
       "chia",
       "bakery",
@@ -3780,22 +2605,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.1,
-    "reviewsCount": 115,
-    "stock": 20,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?wild-caught-chia-seeds"
   },
   {
     "id": "item_164",
-    "name": "Farm-Fresh Golden Flax Seeds",
+    "product_name": "Farm-Fresh Golden Flax Seeds",
+    "category": "Meat & Seafood",
+    "price_in_usd": 32.47,
     "description": "Experience the finest farm-fresh golden flax seeds, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 32.47,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "farm-fresh",
       "golden",
       "meatseafood",
@@ -3803,22 +2621,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.7,
-    "reviewsCount": 11,
-    "stock": 132,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?farm-fresh-golden-flax-seeds"
   },
   {
     "id": "item_165",
-    "name": "Artisan Hemp Hearts",
+    "product_name": "Artisan Hemp Hearts",
+    "category": "Pantry",
+    "price_in_usd": 26.53,
     "description": "Experience the finest artisan hemp hearts, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 26.53,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "artisan",
       "hemp",
       "pantry",
@@ -3826,22 +2637,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.6,
-    "reviewsCount": 260,
-    "stock": 199,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?artisan-hemp-hearts"
   },
   {
     "id": "item_166",
-    "name": "Heritage Rolled Oats",
+    "product_name": "Heritage Rolled Oats",
+    "category": "Beverages",
+    "price_in_usd": 7.18,
     "description": "Experience the finest heritage rolled oats, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 7.18,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "heritage",
       "rolled",
       "beverages",
@@ -3849,22 +2653,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.2,
-    "reviewsCount": 492,
-    "stock": 179,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?heritage-rolled-oats"
   },
   {
     "id": "item_167",
-    "name": "Authentic Artisan Granola",
+    "product_name": "Authentic Artisan Granola",
+    "category": "Snacks",
+    "price_in_usd": 44.99,
     "description": "Experience the finest authentic artisan granola, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 44.99,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "authentic",
       "artisan",
       "snacks",
@@ -3872,22 +2669,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4,
-    "reviewsCount": 79,
-    "stock": 30,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?authentic-artisan-granola"
   },
   {
     "id": "item_168",
-    "name": "Wild-Caught Swiss Muesli",
+    "product_name": "Wild-Caught Swiss Muesli",
+    "category": "Gourmet",
+    "price_in_usd": 7.47,
     "description": "Experience the finest wild-caught swiss muesli, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 7.47,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "wild-caught",
       "swiss",
       "gourmet",
@@ -3895,22 +2685,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4,
-    "reviewsCount": 146,
-    "stock": 100,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?wild-caught-swiss-muesli"
   },
   {
     "id": "item_169",
-    "name": "Aged Vegan Protein Powder",
+    "product_name": "Aged Vegan Protein Powder",
+    "category": "Fresh Produce",
+    "price_in_usd": 30.65,
     "description": "Experience the finest aged vegan protein powder, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 30.65,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "aged",
       "vegan",
       "freshproduce",
@@ -3918,22 +2701,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.6,
-    "reviewsCount": 275,
-    "stock": 162,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-vegan-protein-powder"
   },
   {
     "id": "item_170",
-    "name": "Grass-Fed Collagen Peptides",
+    "product_name": "Grass-Fed Collagen Peptides",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 33.09,
     "description": "Experience the finest grass-fed collagen peptides, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 33.09,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "grass-fed",
       "collagen",
       "dairyeggs",
@@ -3941,22 +2717,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.8,
-    "reviewsCount": 472,
-    "stock": 186,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?grass-fed-collagen-peptides"
   },
   {
     "id": "item_171",
-    "name": "Grass-Fed Dried Goji Berries",
+    "product_name": "Grass-Fed Dried Goji Berries",
+    "category": "Bakery",
+    "price_in_usd": 21.99,
     "description": "Experience the finest grass-fed dried goji berries, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 21.99,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "grass-fed",
       "dried",
       "bakery",
@@ -3964,22 +2733,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.7,
-    "reviewsCount": 245,
-    "stock": 191,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?grass-fed-dried-goji-berries"
   },
   {
     "id": "item_172",
-    "name": "Authentic Acai Puree",
+    "product_name": "Authentic Acai Puree",
+    "category": "Meat & Seafood",
+    "price_in_usd": 19.54,
     "description": "Experience the finest authentic acai puree, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 19.54,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "authentic",
       "acai",
       "meatseafood",
@@ -3987,22 +2749,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.3,
-    "reviewsCount": 213,
-    "stock": 146,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?authentic-acai-puree"
   },
   {
     "id": "item_173",
-    "name": "Wild-Caught Pink Dragon Fruit",
+    "product_name": "Wild-Caught Pink Dragon Fruit",
+    "category": "Pantry",
+    "price_in_usd": 8.95,
     "description": "Experience the finest wild-caught pink dragon fruit, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 8.95,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "wild-caught",
       "pink",
       "pantry",
@@ -4010,22 +2765,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.5,
-    "reviewsCount": 70,
-    "stock": 53,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?wild-caught-pink-dragon-fruit"
   },
   {
     "id": "item_174",
-    "name": "Cold-Pressed Golden Kiwi",
+    "product_name": "Cold-Pressed Golden Kiwi",
+    "category": "Beverages",
+    "price_in_usd": 49.44,
     "description": "Experience the finest cold-pressed golden kiwi, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 49.44,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "cold-pressed",
       "golden",
       "beverages",
@@ -4033,22 +2781,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.9,
-    "reviewsCount": 270,
-    "stock": 142,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?cold-pressed-golden-kiwi"
   },
   {
     "id": "item_175",
-    "name": "Cold-Pressed Papaya",
+    "product_name": "Cold-Pressed Papaya",
+    "category": "Snacks",
+    "price_in_usd": 11.45,
     "description": "Experience the finest cold-pressed papaya, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 11.45,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "cold-pressed",
       "papaya",
       "snacks",
@@ -4056,22 +2797,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.3,
-    "reviewsCount": 374,
-    "stock": 20,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?cold-pressed-papaya"
   },
   {
     "id": "item_176",
-    "name": "Artisan Key Lime",
+    "product_name": "Artisan Key Lime",
+    "category": "Gourmet",
+    "price_in_usd": 30.61,
     "description": "Experience the finest artisan key lime, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 30.61,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "artisan",
       "key",
       "gourmet",
@@ -4079,22 +2813,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.8,
-    "reviewsCount": 288,
-    "stock": 87,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?artisan-key-lime"
   },
   {
     "id": "item_177",
-    "name": "Aged Meyer Lemon",
+    "product_name": "Aged Meyer Lemon",
+    "category": "Fresh Produce",
+    "price_in_usd": 39.5,
     "description": "Experience the finest aged meyer lemon, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 39.5,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "aged",
       "meyer",
       "freshproduce",
@@ -4102,22 +2829,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 5,
-    "reviewsCount": 146,
-    "stock": 25,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-meyer-lemon"
   },
   {
     "id": "item_178",
-    "name": "Wild-Caught Ruby Red Grapefruit",
+    "product_name": "Wild-Caught Ruby Red Grapefruit",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 35.67,
     "description": "Experience the finest wild-caught ruby red grapefruit, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 35.67,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "wild-caught",
       "ruby",
       "dairyeggs",
@@ -4125,22 +2845,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.5,
-    "reviewsCount": 302,
-    "stock": 121,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?wild-caught-ruby-red-grapefruit"
   },
   {
     "id": "item_179",
-    "name": "Fresh Navel Oranges",
+    "product_name": "Fresh Navel Oranges",
+    "category": "Bakery",
+    "price_in_usd": 49.26,
     "description": "Experience the finest fresh navel oranges, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 49.26,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "fresh",
       "navel",
       "bakery",
@@ -4148,22 +2861,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.3,
-    "reviewsCount": 152,
-    "stock": 167,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?fresh-navel-oranges"
   },
   {
     "id": "item_180",
-    "name": "Cold-Pressed Fuji Apples",
+    "product_name": "Cold-Pressed Fuji Apples",
+    "category": "Meat & Seafood",
+    "price_in_usd": 43.87,
     "description": "Experience the finest cold-pressed fuji apples, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 43.87,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "cold-pressed",
       "fuji",
       "meatseafood",
@@ -4171,22 +2877,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.6,
-    "reviewsCount": 371,
-    "stock": 192,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?cold-pressed-fuji-apples"
   },
   {
     "id": "item_181",
-    "name": "Heritage Bartlett Pears",
+    "product_name": "Heritage Bartlett Pears",
+    "category": "Pantry",
+    "price_in_usd": 49.46,
     "description": "Experience the finest heritage bartlett pears, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 49.46,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "heritage",
       "bartlett",
       "pantry",
@@ -4194,22 +2893,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4,
-    "reviewsCount": 159,
-    "stock": 156,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?heritage-bartlett-pears"
   },
   {
     "id": "item_182",
-    "name": "Organic White Peaches",
+    "product_name": "Organic White Peaches",
+    "category": "Beverages",
+    "price_in_usd": 23.23,
     "description": "Experience the finest organic white peaches, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 23.23,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "organic",
       "white",
       "beverages",
@@ -4217,22 +2909,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.8,
-    "reviewsCount": 80,
-    "stock": 208,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?organic-white-peaches"
   },
   {
     "id": "item_183",
-    "name": "Farm-Fresh Black Plums",
+    "product_name": "Farm-Fresh Black Plums",
+    "category": "Snacks",
+    "price_in_usd": 24.31,
     "description": "Experience the finest farm-fresh black plums, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 24.31,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "farm-fresh",
       "black",
       "snacks",
@@ -4240,22 +2925,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.5,
-    "reviewsCount": 283,
-    "stock": 138,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?farm-fresh-black-plums"
   },
   {
     "id": "item_184",
-    "name": "Farm-Fresh Bing Cherries",
+    "product_name": "Farm-Fresh Bing Cherries",
+    "category": "Gourmet",
+    "price_in_usd": 48.82,
     "description": "Experience the finest farm-fresh bing cherries, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 48.82,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "farm-fresh",
       "bing",
       "gourmet",
@@ -4263,22 +2941,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.8,
-    "reviewsCount": 65,
-    "stock": 212,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?farm-fresh-bing-cherries"
   },
   {
     "id": "item_185",
-    "name": "Handcrafted Concord Grapes",
+    "product_name": "Handcrafted Concord Grapes",
+    "category": "Fresh Produce",
+    "price_in_usd": 31.87,
     "description": "Experience the finest handcrafted concord grapes, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 31.87,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "handcrafted",
       "concord",
       "freshproduce",
@@ -4286,22 +2957,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.6,
-    "reviewsCount": 189,
-    "stock": 218,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?handcrafted-concord-grapes"
   },
   {
     "id": "item_186",
-    "name": "Aged Heirloom Tomatoes",
+    "product_name": "Aged Heirloom Tomatoes",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 46.92,
     "description": "Experience the finest aged heirloom tomatoes, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 46.92,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "aged",
       "heirloom",
       "dairyeggs",
@@ -4309,22 +2973,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.8,
-    "reviewsCount": 197,
-    "stock": 92,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-heirloom-tomatoes"
   },
   {
     "id": "item_187",
-    "name": "Grass-Fed Bell Peppers",
+    "product_name": "Grass-Fed Bell Peppers",
+    "category": "Bakery",
+    "price_in_usd": 49.8,
     "description": "Experience the finest grass-fed bell peppers, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 49.8,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "grass-fed",
       "bell",
       "bakery",
@@ -4332,22 +2989,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.3,
-    "reviewsCount": 133,
-    "stock": 201,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?grass-fed-bell-peppers"
   },
   {
     "id": "item_188",
-    "name": "Wild-Caught English Cucumbers",
+    "product_name": "Wild-Caught English Cucumbers",
+    "category": "Meat & Seafood",
+    "price_in_usd": 9.53,
     "description": "Experience the finest wild-caught english cucumbers, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 9.53,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "wild-caught",
       "english",
       "meatseafood",
@@ -4355,22 +3005,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.7,
-    "reviewsCount": 108,
-    "stock": 120,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?wild-caught-english-cucumbers"
   },
   {
     "id": "item_189",
-    "name": "Heritage Zucchini",
+    "product_name": "Heritage Zucchini",
+    "category": "Pantry",
+    "price_in_usd": 31.91,
     "description": "Experience the finest heritage zucchini, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 31.91,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "heritage",
       "zucchini",
       "pantry",
@@ -4378,22 +3021,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.7,
-    "reviewsCount": 276,
-    "stock": 151,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?heritage-zucchini"
   },
   {
     "id": "item_190",
-    "name": "Aged Japanese Eggplant",
+    "product_name": "Aged Japanese Eggplant",
+    "category": "Beverages",
+    "price_in_usd": 47.68,
     "description": "Experience the finest aged japanese eggplant, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 47.68,
-    "images": [
-      "assets/images/dairy.jpg"
-    ],
-    "category": "Dairy & Plant Milk",
-    "subCategory": "Eggs",
-    "tags": [
+    "ai_keywords": [
       "aged",
       "japanese",
       "beverages",
@@ -4401,22 +3037,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.4,
-    "reviewsCount": 452,
-    "stock": 47,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-japanese-eggplant"
   },
   {
     "id": "item_191",
-    "name": "Wild-Caught Rainbow Carrots",
+    "product_name": "Wild-Caught Rainbow Carrots",
+    "category": "Snacks",
+    "price_in_usd": 5.74,
     "description": "Experience the finest wild-caught rainbow carrots, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 5.74,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "wild-caught",
       "rainbow",
       "snacks",
@@ -4424,22 +3053,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4,
-    "reviewsCount": 49,
-    "stock": 125,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?wild-caught-rainbow-carrots"
   },
   {
     "id": "item_192",
-    "name": "Aged Russet Potatoes",
+    "product_name": "Aged Russet Potatoes",
+    "category": "Gourmet",
+    "price_in_usd": 32.54,
     "description": "Experience the finest aged russet potatoes, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 32.54,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "aged",
       "russet",
       "gourmet",
@@ -4447,22 +3069,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.9,
-    "reviewsCount": 454,
-    "stock": 139,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?aged-russet-potatoes"
   },
   {
     "id": "item_193",
-    "name": "Grass-Fed Japanese Sweet Potatoes",
+    "product_name": "Grass-Fed Japanese Sweet Potatoes",
+    "category": "Fresh Produce",
+    "price_in_usd": 47.91,
     "description": "Experience the finest grass-fed japanese sweet potatoes, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 47.91,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "grass-fed",
       "japanese",
       "freshproduce",
@@ -4470,22 +3085,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.9,
-    "reviewsCount": 87,
-    "stock": 94,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?grass-fed-japanese-sweet-potatoes"
   },
   {
     "id": "item_194",
-    "name": "Heritage Vidalia Onions",
+    "product_name": "Heritage Vidalia Onions",
+    "category": "Dairy & Eggs",
+    "price_in_usd": 42.94,
     "description": "Experience the finest heritage vidalia onions, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 42.94,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "heritage",
       "vidalia",
       "dairyeggs",
@@ -4493,22 +3101,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.9,
-    "reviewsCount": 442,
-    "stock": 137,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?heritage-vidalia-onions"
   },
   {
     "id": "item_195",
-    "name": "Wild-Caught Black Garlic",
+    "product_name": "Wild-Caught Black Garlic",
+    "category": "Bakery",
+    "price_in_usd": 30.55,
     "description": "Experience the finest wild-caught black garlic, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 30.55,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "wild-caught",
       "black",
       "bakery",
@@ -4516,22 +3117,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.4,
-    "reviewsCount": 357,
-    "stock": 148,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?wild-caught-black-garlic"
   },
   {
     "id": "item_196",
-    "name": "Grass-Fed Fresh Ginger",
+    "product_name": "Grass-Fed Fresh Ginger",
+    "category": "Meat & Seafood",
+    "price_in_usd": 31,
     "description": "Experience the finest grass-fed fresh ginger, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 31,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "grass-fed",
       "fresh",
       "meatseafood",
@@ -4539,22 +3133,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.7,
-    "reviewsCount": 408,
-    "stock": 177,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?grass-fed-fresh-ginger"
   },
   {
     "id": "item_197",
-    "name": "Premium Turmeric Root",
+    "product_name": "Premium Turmeric Root",
+    "category": "Pantry",
+    "price_in_usd": 11.57,
     "description": "Experience the finest premium turmeric root, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 11.57,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "premium",
       "turmeric",
       "pantry",
@@ -4562,22 +3149,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.9,
-    "reviewsCount": 302,
-    "stock": 161,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?premium-turmeric-root"
   },
   {
     "id": "item_198",
-    "name": "Imported Cilantro",
+    "product_name": "Imported Cilantro",
+    "category": "Beverages",
+    "price_in_usd": 31.84,
     "description": "Experience the finest imported cilantro, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 31.84,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "imported",
       "cilantro",
       "beverages",
@@ -4585,22 +3165,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4,
-    "reviewsCount": 370,
-    "stock": 107,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?imported-cilantro"
   },
   {
     "id": "item_199",
-    "name": "Sustainable Italian Parsley",
+    "product_name": "Sustainable Italian Parsley",
+    "category": "Snacks",
+    "price_in_usd": 30.45,
     "description": "Experience the finest sustainable italian parsley, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 30.45,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "sustainable",
       "italian",
       "snacks",
@@ -4608,22 +3181,15 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 3.8,
-    "reviewsCount": 106,
-    "stock": 205,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?sustainable-italian-parsley"
   },
   {
     "id": "item_200",
-    "name": "Heritage Thai Basil",
+    "product_name": "Heritage Thai Basil",
+    "category": "Gourmet",
+    "price_in_usd": 36.7,
     "description": "Experience the finest heritage thai basil, carefully sourced for international standards to bring unparalleled quality to your table.",
-    "price": 36.7,
-    "images": [
-      "assets/images/grocery-generic.jpg"
-    ],
-    "category": "Pantry & Gourmet",
-    "subCategory": "Other",
-    "tags": [
+    "ai_keywords": [
       "heritage",
       "thai",
       "gourmet",
@@ -4631,9 +3197,6 @@ export const products: Product[] = [
       "global",
       "grocery"
     ],
-    "rating": 4.7,
-    "reviewsCount": 473,
-    "stock": 152,
-    "reviews": []
+    "image": "https://source.unsplash.com/featured/500x500/?heritage-thai-basil"
   }
 ]

@@ -1,13 +1,22 @@
+import React, { useState } from 'react';
 import { Link } from 'react-router';
 import { Product } from '@/data/products';
 import { useCart } from '@/context/CartContext';
+import { useWishlist } from '@/context/WishlistContext';
+import { useCurrency } from '@/context/CurrencyContext';
 import { Button } from './ui/Button';
-import { Star, ShoppingCart } from 'lucide-react';
-import { useState } from 'react';
+import { Star, ShoppingCart, Heart } from 'lucide-react';
 
-export function ProductCard({ product }: { product: Product }) {
+interface ProductCardProps {
+  product: Product;
+}
+
+export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const { addItem } = useCart();
+  const { isInWishlist, addToWishlist, removeFromWishlist } = useWishlist();
+  const { formatPrice } = useCurrency();
   const [isAdded, setIsAdded] = useState(false);
+  const inWishlist = isInWishlist(product.id);
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -15,6 +24,16 @@ export function ProductCard({ product }: { product: Product }) {
     addItem(product);
     setIsAdded(true);
     setTimeout(() => setIsAdded(false), 2000);
+  };
+  
+  const handleWishlistToggle = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (inWishlist) {
+      removeFromWishlist(product.id);
+    } else {
+      addToWishlist(product);
+    }
   };
 
   const discount = product.originalPrice 
@@ -36,6 +55,13 @@ export function ProductCard({ product }: { product: Product }) {
           </span>
         )}
       </div>
+      
+      <button 
+        onClick={handleWishlistToggle}
+        className="absolute top-6 right-6 z-20 bg-white/80 backdrop-blur-sm p-1.5 rounded-full shadow-sm hover:shadow-md transition-shadow text-gray-400 hover:text-red-500"
+      >
+        <Heart className={`w-4 h-4 ${inWishlist ? 'fill-red-500 text-red-500' : ''}`} />
+      </button>
 
       {/* Image */}
       <div className="aspect-[4/5] overflow-hidden bg-[#F3F4F6] rounded-xl relative mb-3">
@@ -45,6 +71,7 @@ export function ProductCard({ product }: { product: Product }) {
           className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
         />
         {/* Quick Add overlay */}
+
         <div className="absolute inset-x-0 bottom-0 p-4 opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
            <Button 
             className="w-full shadow-lg h-10" 
@@ -73,10 +100,10 @@ export function ProductCard({ product }: { product: Product }) {
         {/* Price */}
         <div className="flex items-center justify-between mt-auto">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="text-[20px] font-[800] text-[#111827]">{product.displayPrice || `৳${product.price}`}</span>
+            <span className="text-[20px] font-[800] text-[#111827]">{product.displayPrice || formatPrice(product.price)}</span>
             {product.originalPrice && (
               <span className="text-sm text-gray-400 line-through">
-                ৳{product.originalPrice}
+                {formatPrice(product.originalPrice)}
               </span>
             )}
           </div>

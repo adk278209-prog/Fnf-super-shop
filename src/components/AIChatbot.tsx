@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { MessageSquare, X, Send } from 'lucide-react';
 import { Button } from './ui/Button';
 
@@ -21,13 +21,23 @@ export function AIChatbot() {
     }
   }, [messages, isOpen]);
 
-  const handleSend = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!input.trim()) return;
+  useEffect(() => {
+    const handleTrigger = (e: Event) => {
+      const customEvent = e as CustomEvent;
+      const query = customEvent.detail?.query;
+      if (query) {
+        setIsOpen(true);
+        // Automatically send the message
+        sendMessage(query);
+      }
+    };
+    
+    window.addEventListener('trigger-ai-chat', handleTrigger);
+    return () => window.removeEventListener('trigger-ai-chat', handleTrigger);
+  }, []);
 
-    const userMessage = input.trim();
+  const sendMessage = async (userMessage: string) => {
     setMessages(prev => [...prev, { role: 'user', text: userMessage }]);
-    setInput('');
     setIsLoading(true);
 
     try {
@@ -49,6 +59,15 @@ export function AIChatbot() {
     } finally {
       setIsLoading(false);
     }
+  };
+
+  const handleSend = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!input.trim()) return;
+    
+    const userMessage = input.trim();
+    setInput('');
+    await sendMessage(userMessage);
   };
 
   return (

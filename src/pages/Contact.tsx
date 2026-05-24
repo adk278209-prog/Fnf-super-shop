@@ -1,3 +1,4 @@
+import React from 'react';
 import { Button } from '@/components/ui/Button';
 import { Mail, Phone, MapPin, MessageSquare, Clock } from 'lucide-react';
 

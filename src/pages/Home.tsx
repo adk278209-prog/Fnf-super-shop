@@ -1,11 +1,13 @@
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import { Button } from '@/components/ui/Button';
 import { ProductCard } from '@/components/ProductCard';
 import { products } from '@/data/products';
 import { Truck, ShieldCheck, Tag, ArrowRight, Star } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { CategoryBrowser } from '@/components/CategoryBrowser';
 
 export function Home() {
+  const navigate = useNavigate();
   const featuredProducts = products.filter(p => p.tags.includes('bestseller')).slice(0, 4);
   const newArrivals = products.filter(p => p.tags.includes('new') || p.tags.includes('sale')).slice(0, 4);
   
@@ -107,6 +109,15 @@ export function Home() {
           </div>
         </div>
       </section>
+
+      {/* Category Browser */}
+      <CategoryBrowser onAiSearch={(query) => {
+        // Trigger chat or somehow handle AI search. The simplest way to handle this globally is to 
+        // emit a custom event that the AIChatbot component listens to, or pass it up.
+        // Let's use a custom event to trigger the chat open and populate.
+        const ev = new CustomEvent('trigger-ai-chat', { detail: { query } });
+        window.dispatchEvent(ev);
+      }} />
 
       {/* Featured Products */}
       <section className="py-20 bg-gray-50">
