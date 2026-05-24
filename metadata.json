@@ -1,0 +1,6 @@
+{
+  "name": "FNF Super Shop",
+  "description": "An e-commerce React application featuring a vibrant design inspired by the WoodMart theme.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
