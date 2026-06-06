@@ -260,7 +260,7 @@ export function CheckoutPage() {
                 {items.map(item => (
                   <div key={item.id} className="flex items-center gap-3">
                     <div className="w-12 h-12 bg-gray-50 rounded border border-gray-100 overflow-hidden flex-shrink-0 relative">
-                      <img src={item.images[0]} alt={item.name} className="w-full h-full object-cover" />
+                      <img src={item.images[0]} alt={item.name} className="w-full h-full object-cover" onError={(e) => { e.currentTarget.src = `https://placehold.co/100x100/eaeaea/888888/jpg?text=${encodeURIComponent(item.name)}`; }} />
                       <span className="absolute -top-1 -right-1 bg-gray-500 text-white text-[9px] w-4 h-4 flex items-center justify-center rounded-full border border-white">
                         {item.quantity}
                       </span>

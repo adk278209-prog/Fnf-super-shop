@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { MessageSquare, X, Send } from 'lucide-react';
+import { MessageSquare, X, Send, Clock } from 'lucide-react';
 import { Button } from './ui/Button';
 
 export function AIChatbot() {
@@ -9,6 +9,14 @@ export function AIChatbot() {
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [history, setHistory] = useState<string[]>(() => {
+    try {
+      const saved = localStorage.getItem('ai_chat_history');
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  });
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
@@ -36,8 +44,15 @@ export function AIChatbot() {
     return () => window.removeEventListener('trigger-ai-chat', handleTrigger);
   }, []);
 
+  const saveHistory = (query: string) => {
+    const newHistory = [query, ...history.filter(h => h !== query)].slice(0, 10);
+    setHistory(newHistory);
+    localStorage.setItem('ai_chat_history', JSON.stringify(newHistory));
+  };
+
   const sendMessage = async (userMessage: string) => {
     setMessages(prev => [...prev, { role: 'user', text: userMessage }]);
+    saveHistory(userMessage);
     setIsLoading(true);
 
     try {
@@ -82,7 +97,7 @@ export function AIChatbot() {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-6 right-6 w-[350px] h-[500px] bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.2)] flex flex-col z-50 border border-gray-200 overflow-hidden transform transition-all duration-300 origin-bottom-right">
+        <div className="fixed bottom-6 right-6 w-[350px] h-[550px] max-h-[85vh] bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.2)] flex flex-col z-50 border border-gray-200 overflow-hidden transform transition-all duration-300 origin-bottom-right">
           {/* Header */}
           <div className="bg-[#111827] text-white p-4 flex justify-between items-center">
             <div className="flex items-center gap-3">
@@ -114,24 +129,54 @@ export function AIChatbot() {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Input */}
-          <form onSubmit={handleSend} className="p-3 bg-white border-t border-gray-100 flex gap-2">
-            <input 
-              type="text"
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              placeholder="Type your message..."
-              className="flex-grow px-4 py-2 border border-gray-200 rounded-full focus:outline-none focus:border-[#FF6321] text-sm"
-              disabled={isLoading}
-            />
-            <button 
-              type="submit" 
-              disabled={!input.trim() || isLoading}
-              className="w-10 h-10 flex-shrink-0 bg-[#FF6321] text-white rounded-full flex items-center justify-center hover:bg-[#e85a1e] disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              <Send className="w-4 h-4" />
-            </button>
-          </form>
+          {/* History & Input */}
+          <div className="bg-white border-t border-gray-100 flex flex-col">
+            {history.length > 0 && (
+              <div className="pt-3 px-3">
+                <div className="flex justify-between items-center mb-2">
+                  <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wide flex items-center gap-1">
+                    <Clock className="w-3 h-3" /> Recent Queries
+                  </span>
+                  <button 
+                    onClick={() => { setHistory([]); localStorage.removeItem('ai_chat_history'); }} 
+                    className="text-[10px] text-gray-400 hover:text-red-500 transition-colors"
+                  >
+                    Clear
+                  </button>
+                </div>
+                <div className="flex gap-2 overflow-x-auto pb-2 [&::-webkit-scrollbar]:hidden" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                  {history.map((item, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => !isLoading && sendMessage(item)}
+                      disabled={isLoading}
+                      className="text-[11px] whitespace-nowrap bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1.5 rounded-full transition-colors flex-shrink-0 max-w-[200px] truncate"
+                      title={item}
+                    >
+                      {item}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+            <form onSubmit={handleSend} className="p-3 flex gap-2">
+              <input 
+                type="text"
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                placeholder="Type your message..."
+                className="flex-grow px-4 py-2 border border-gray-200 rounded-full focus:outline-none focus:border-[#FF6321] text-sm"
+                disabled={isLoading}
+              />
+              <button 
+                type="submit" 
+                disabled={!input.trim() || isLoading}
+                className="w-10 h-10 flex-shrink-0 bg-[#FF6321] text-white rounded-full flex items-center justify-center hover:bg-[#e85a1e] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              >
+                <Send className="w-4 h-4" />
+              </button>
+            </form>
+          </div>
         </div>
       )}
     </>

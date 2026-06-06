@@ -37,7 +37,7 @@ export function CartPage() {
               {items.map(item => (
                 <li key={item.id} className="p-6 flex flex-col sm:flex-row gap-6 items-start sm:items-center">
                   <Link to={`/product/${item.id}`} className="w-24 h-24 flex-shrink-0 bg-gray-50 rounded-lg overflow-hidden border border-gray-100 block">
-                    <img src={item.images[0]} alt={item.name} className="w-full h-full object-cover" />
+                    <img src={item.images[0]} alt={item.name} className="w-full h-full object-cover" onError={(e) => { e.currentTarget.src = `https://placehold.co/200x200/eaeaea/888888/jpg?text=${encodeURIComponent(item.name)}`; }} />
                   </Link>
                   
                   <div className="flex-grow">

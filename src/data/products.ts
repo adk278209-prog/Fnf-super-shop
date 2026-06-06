@@ -42,7 +42,7 @@ export const products: Product[] = [
     "description": "Experience the finest sustainable avocados, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 44.51,
     "images": [
-      "assets/images/vegetables.jpg"
+      "https://images.unsplash.com/photo-1610832958506-aa56368176cf?q=80&w=800"
     ],
     "category": "Fruits & Vegetables",
     "subCategory": "Fresh Fruits",
@@ -65,7 +65,7 @@ export const products: Product[] = [
     "description": "Experience the finest authentic whole milk, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 21.56,
     "images": [
-      "assets/images/dairy.jpg"
+      "https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=800"
     ],
     "category": "Dairy & Plant Milk",
     "subCategory": "Milk & Cream",
@@ -88,7 +88,7 @@ export const products: Product[] = [
     "description": "Experience the finest sustainable french baguette, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 46.53,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1598373182133-52452f7691ed?q=80&w=800"
     ],
     "category": "Bakery & Bread",
     "subCategory": "Sliced Bread",
@@ -111,7 +111,7 @@ export const products: Product[] = [
     "description": "Experience the finest fresh coffee beans, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 31.71,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1559525839-b184a4d698c7?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Coffee & Tea",
@@ -134,7 +134,7 @@ export const products: Product[] = [
     "description": "Experience the finest authentic saffron, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 26.51,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Spices & Baking",
@@ -157,7 +157,7 @@ export const products: Product[] = [
     "description": "Experience the finest premium truffle oil, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 16.78,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1474979266404-7eaaca23c5ce?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Oils & Vinegars",
@@ -180,7 +180,7 @@ export const products: Product[] = [
     "description": "Experience the finest fresh wagyu beef, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 7.8,
     "images": [
-      "assets/images/meat.jpg"
+      "https://images.unsplash.com/photo-1603048297172-c92544798d5e?q=80&w=800"
     ],
     "category": "Meat & Seafood",
     "subCategory": "Beef & Lamb",
@@ -203,7 +203,7 @@ export const products: Product[] = [
     "description": "Experience the finest fresh brie cheese, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 34.26,
     "images": [
-      "assets/images/dairy.jpg"
+      "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?q=80&w=800"
     ],
     "category": "Dairy & Plant Milk",
     "subCategory": "Cheese",
@@ -226,7 +226,7 @@ export const products: Product[] = [
     "description": "Experience the finest gourmet croissants, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 28.52,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1608198093002-ad4e005484ec?q=80&w=800"
     ],
     "category": "Bakery & Bread",
     "subCategory": "Pastries",
@@ -249,7 +249,7 @@ export const products: Product[] = [
     "description": "Experience the finest handcrafted smoked salmon, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 48.38,
     "images": [
-      "assets/images/meat.jpg"
+      "https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?q=80&w=800"
     ],
     "category": "Meat & Seafood",
     "subCategory": "Fresh Fish",
@@ -272,7 +272,7 @@ export const products: Product[] = [
     "description": "Experience the finest wild-caught macadamia nuts, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 12.58,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1505253758473-96b7015fcd40?q=80&w=800"
     ],
     "category": "Snacks",
     "subCategory": "Nuts & Spreads",
@@ -295,7 +295,7 @@ export const products: Product[] = [
     "description": "Experience the finest wild-caught manuka honey, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 16.53,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1510431198-83163e5e4fa4?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Condiments & Spreads",
@@ -318,7 +318,7 @@ export const products: Product[] = [
     "description": "Experience the finest imported matcha powder, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 35.12,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Coffee & Tea",
@@ -341,7 +341,7 @@ export const products: Product[] = [
     "description": "Experience the finest handcrafted extra virgin olive oil, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 7.9,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1620853757579-22a7f5aedfa8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Oils & Vinegars",
@@ -364,7 +364,7 @@ export const products: Product[] = [
     "description": "Experience the finest fresh balsamic vinegar, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 44.83,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1474979266404-7eaaca23c5ce?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Oils & Vinegars",
@@ -387,7 +387,7 @@ export const products: Product[] = [
     "description": "Experience the finest authentic almond butter, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 39.85,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1579722821273-0f6c7d44362f?q=80&w=800"
     ],
     "category": "Snacks",
     "subCategory": "Nuts & Spreads",
@@ -410,7 +410,7 @@ export const products: Product[] = [
     "description": "Experience the finest imported quinoa, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 31.24,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1551228400-f926715f45cd?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Grains & Pasta",
@@ -433,7 +433,7 @@ export const products: Product[] = [
     "description": "Experience the finest heritage himalayan sea salt, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 10.04,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Spices & Baking",
@@ -456,7 +456,7 @@ export const products: Product[] = [
     "description": "Experience the finest sustainable vanilla beans, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 15.6,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Spices & Baking",
@@ -479,7 +479,7 @@ export const products: Product[] = [
     "description": "Experience the finest grass-fed maple syrup, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 42.36,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1589152144820-692b189e0b34?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Condiments & Spreads",
@@ -502,7 +502,7 @@ export const products: Product[] = [
     "description": "Experience the finest handcrafted kombucha, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 36.43,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1600271886742-f049cd451bba?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Juices",
@@ -525,7 +525,7 @@ export const products: Product[] = [
     "description": "Experience the finest fresh dark chocolate, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 20.17,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1582293041079-7814c271e1b2?q=80&w=800"
     ],
     "category": "Snacks",
     "subCategory": "Sweets",
@@ -548,7 +548,7 @@ export const products: Product[] = [
     "description": "Experience the finest heritage sencha green tea, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 6.63,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1559525839-b184a4d698c7?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Coffee & Tea",
@@ -571,7 +571,7 @@ export const products: Product[] = [
     "description": "Experience the finest grass-fed ribeye steak, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 20.22,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Coffee & Tea",
@@ -594,7 +594,7 @@ export const products: Product[] = [
     "description": "Experience the finest imported lobster tails, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 6.33,
     "images": [
-      "assets/images/meat.jpg"
+      "https://images.unsplash.com/photo-1580476262798-b91c890e1bc0?q=80&w=800"
     ],
     "category": "Meat & Seafood",
     "subCategory": "Fresh Fish",
@@ -617,7 +617,7 @@ export const products: Product[] = [
     "description": "Experience the finest fresh beluga caviar, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 41.03,
     "images": [
-      "assets/images/meat.jpg"
+      "https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?q=80&w=800"
     ],
     "category": "Meat & Seafood",
     "subCategory": "Fresh Fish",
@@ -640,7 +640,7 @@ export const products: Product[] = [
     "description": "Experience the finest authentic prosciutto di parma, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 43.86,
     "images": [
-      "assets/images/meat.jpg"
+      "https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=800"
     ],
     "category": "Meat & Seafood",
     "subCategory": "Beef & Lamb",
@@ -663,7 +663,7 @@ export const products: Product[] = [
     "description": "Experience the finest organic parmigiano reggiano, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 7.68,
     "images": [
-      "assets/images/dairy.jpg"
+      "https://images.unsplash.com/photo-1452195100486-9cc805987862?q=80&w=800"
     ],
     "category": "Dairy & Plant Milk",
     "subCategory": "Cheese",
@@ -686,7 +686,7 @@ export const products: Product[] = [
     "description": "Experience the finest gourmet basmati rice, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 24.45,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1585239103980-eff7f2fd1303?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Grains & Pasta",
@@ -709,7 +709,7 @@ export const products: Product[] = [
     "description": "Experience the finest heritage linguine pasta, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 39.72,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1551228400-f926715f45cd?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Grains & Pasta",
@@ -732,7 +732,7 @@ export const products: Product[] = [
     "description": "Experience the finest authentic basil pesto, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 26.07,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1510431198-83163e5e4fa4?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Condiments & Spreads",
@@ -755,7 +755,7 @@ export const products: Product[] = [
     "description": "Experience the finest organic oat milk, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 34.6,
     "images": [
-      "assets/images/dairy.jpg"
+      "https://images.unsplash.com/photo-1563636619-e9143da7973b?q=80&w=800"
     ],
     "category": "Dairy & Plant Milk",
     "subCategory": "Milk & Cream",
@@ -778,7 +778,7 @@ export const products: Product[] = [
     "description": "Experience the finest pure greek yogurt, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 42.38,
     "images": [
-      "assets/images/dairy.jpg"
+      "https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=800"
     ],
     "category": "Dairy & Plant Milk",
     "subCategory": "Yogurt",
@@ -801,7 +801,7 @@ export const products: Product[] = [
     "description": "Experience the finest gourmet blueberries, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 27.54,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -824,7 +824,7 @@ export const products: Product[] = [
     "description": "Experience the finest artisan strawberries, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 21.83,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -847,7 +847,7 @@ export const products: Product[] = [
     "description": "Experience the finest grass-fed raspberries, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 10.34,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -870,7 +870,7 @@ export const products: Product[] = [
     "description": "Experience the finest premium blackberries, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 24.29,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -893,7 +893,7 @@ export const products: Product[] = [
     "description": "Experience the finest gourmet alphonso mangoes, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 22.48,
     "images": [
-      "assets/images/vegetables.jpg"
+      "https://images.unsplash.com/photo-1519999482648-25049ddd3d1f?q=80&w=800"
     ],
     "category": "Fruits & Vegetables",
     "subCategory": "Fresh Fruits",
@@ -916,7 +916,7 @@ export const products: Product[] = [
     "description": "Experience the finest handcrafted pineapple, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 19.08,
     "images": [
-      "assets/images/vegetables.jpg"
+      "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?q=80&w=800"
     ],
     "category": "Fruits & Vegetables",
     "subCategory": "Fresh Fruits",
@@ -939,7 +939,7 @@ export const products: Product[] = [
     "description": "Experience the finest heritage pomegranates, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 26.73,
     "images": [
-      "assets/images/vegetables.jpg"
+      "https://images.unsplash.com/photo-1560806887-1e4cd0b6bcc6?q=80&w=800"
     ],
     "category": "Fruits & Vegetables",
     "subCategory": "Fresh Fruits",
@@ -962,7 +962,7 @@ export const products: Product[] = [
     "description": "Experience the finest premium coconut water, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 38.67,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1523362628745-0c100150b504?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Water",
@@ -985,7 +985,7 @@ export const products: Product[] = [
     "description": "Experience the finest authentic sparkling mineral water, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 9.25,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1523362628745-0c100150b504?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Water",
@@ -1008,7 +1008,7 @@ export const products: Product[] = [
     "description": "Experience the finest fresh orange juice, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 5.16,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Juices",
@@ -1031,7 +1031,7 @@ export const products: Product[] = [
     "description": "Experience the finest organic apple cider, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 39.17,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1600271886742-f049cd451bba?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Juices",
@@ -1054,7 +1054,7 @@ export const products: Product[] = [
     "description": "Experience the finest grass-fed ginger kombucha, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 23.84,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Juices",
@@ -1077,7 +1077,7 @@ export const products: Product[] = [
     "description": "Experience the finest heritage macadamia milk, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 17.97,
     "images": [
-      "assets/images/dairy.jpg"
+      "https://images.unsplash.com/photo-1528750717929-32abb73d3bd9?q=80&w=800"
     ],
     "category": "Dairy & Plant Milk",
     "subCategory": "Milk & Cream",
@@ -1100,7 +1100,7 @@ export const products: Product[] = [
     "description": "Experience the finest fresh soy milk, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 37.06,
     "images": [
-      "assets/images/dairy.jpg"
+      "https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=800"
     ],
     "category": "Dairy & Plant Milk",
     "subCategory": "Milk & Cream",
@@ -1123,7 +1123,7 @@ export const products: Product[] = [
     "description": "Experience the finest farm-fresh cultured butter, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 38,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1505253758473-96b7015fcd40?q=80&w=800"
     ],
     "category": "Snacks",
     "subCategory": "Nuts & Spreads",
@@ -1146,7 +1146,7 @@ export const products: Product[] = [
     "description": "Experience the finest grass-fed free-range eggs, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 47.46,
     "images": [
-      "assets/images/dairy.jpg"
+      "https://images.unsplash.com/photo-1506976785307-8732e854ad03?q=80&w=800"
     ],
     "category": "Dairy & Plant Milk",
     "subCategory": "Eggs",
@@ -1169,7 +1169,7 @@ export const products: Product[] = [
     "description": "Experience the finest organic sourdough boule, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 15.66,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800"
     ],
     "category": "Bakery & Bread",
     "subCategory": "Sliced Bread",
@@ -1192,7 +1192,7 @@ export const products: Product[] = [
     "description": "Experience the finest fresh ciabatta bread, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 23.98,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1598373182133-52452f7691ed?q=80&w=800"
     ],
     "category": "Bakery & Bread",
     "subCategory": "Sliced Bread",
@@ -1215,7 +1215,7 @@ export const products: Product[] = [
     "description": "Experience the finest grass-fed focaccia, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 5.46,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1238,7 +1238,7 @@ export const products: Product[] = [
     "description": "Experience the finest imported pita bread, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 37.54,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1261,7 +1261,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged corn tortillas, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 27.67,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1284,7 +1284,7 @@ export const products: Product[] = [
     "description": "Experience the finest sustainable classic hummus, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 11.14,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1579722821273-0f6c7d44362f?q=80&w=800"
     ],
     "category": "Snacks",
     "subCategory": "Nuts & Spreads",
@@ -1307,7 +1307,7 @@ export const products: Product[] = [
     "description": "Experience the finest imported spicy guacamole, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 6.72,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1330,7 +1330,7 @@ export const products: Product[] = [
     "description": "Experience the finest farm-fresh roasted salsa, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 5.26,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1353,7 +1353,7 @@ export const products: Product[] = [
     "description": "Experience the finest gourmet pecans, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 5.97,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1505253758473-96b7015fcd40?q=80&w=800"
     ],
     "category": "Snacks",
     "subCategory": "Nuts & Spreads",
@@ -1376,7 +1376,7 @@ export const products: Product[] = [
     "description": "Experience the finest handcrafted english walnuts, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 48.1,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1579722821273-0f6c7d44362f?q=80&w=800"
     ],
     "category": "Snacks",
     "subCategory": "Nuts & Spreads",
@@ -1399,7 +1399,7 @@ export const products: Product[] = [
     "description": "Experience the finest pure roasted cashews, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 28.05,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1505253758473-96b7015fcd40?q=80&w=800"
     ],
     "category": "Snacks",
     "subCategory": "Nuts & Spreads",
@@ -1422,7 +1422,7 @@ export const products: Product[] = [
     "description": "Experience the finest wild-caught shelled pistachios, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 24.37,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1445,7 +1445,7 @@ export const products: Product[] = [
     "description": "Experience the finest wild-caught marcona almonds, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 18.82,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1468,7 +1468,7 @@ export const products: Product[] = [
     "description": "Experience the finest artisan chia seeds, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 40.34,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1491,7 +1491,7 @@ export const products: Product[] = [
     "description": "Experience the finest imported golden flax seeds, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 30.24,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1514,7 +1514,7 @@ export const products: Product[] = [
     "description": "Experience the finest heritage hemp hearts, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 37.78,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1537,7 +1537,7 @@ export const products: Product[] = [
     "description": "Experience the finest pure rolled oats, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 39.36,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1560,7 +1560,7 @@ export const products: Product[] = [
     "description": "Experience the finest premium artisan granola, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 22.05,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1583,7 +1583,7 @@ export const products: Product[] = [
     "description": "Experience the finest imported swiss muesli, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 25.39,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1606,7 +1606,7 @@ export const products: Product[] = [
     "description": "Experience the finest premium vegan protein powder, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 46.71,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1629,7 +1629,7 @@ export const products: Product[] = [
     "description": "Experience the finest premium collagen peptides, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 30.08,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1652,7 +1652,7 @@ export const products: Product[] = [
     "description": "Experience the finest authentic dried goji berries, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 15.46,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1675,7 +1675,7 @@ export const products: Product[] = [
     "description": "Experience the finest handcrafted acai puree, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 36.48,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1698,7 +1698,7 @@ export const products: Product[] = [
     "description": "Experience the finest wild-caught pink dragon fruit, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 37.05,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1721,7 +1721,7 @@ export const products: Product[] = [
     "description": "Experience the finest gourmet golden kiwi, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 27.24,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1744,7 +1744,7 @@ export const products: Product[] = [
     "description": "Experience the finest cold-pressed papaya, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 22.3,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1767,7 +1767,7 @@ export const products: Product[] = [
     "description": "Experience the finest premium key lime, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 43.1,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1790,7 +1790,7 @@ export const products: Product[] = [
     "description": "Experience the finest sustainable meyer lemon, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 34.74,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1813,7 +1813,7 @@ export const products: Product[] = [
     "description": "Experience the finest authentic ruby red grapefruit, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 7.41,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1836,7 +1836,7 @@ export const products: Product[] = [
     "description": "Experience the finest heritage navel oranges, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 48.75,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1859,7 +1859,7 @@ export const products: Product[] = [
     "description": "Experience the finest imported fuji apples, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 23.64,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1882,7 +1882,7 @@ export const products: Product[] = [
     "description": "Experience the finest handcrafted bartlett pears, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 48.49,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1905,7 +1905,7 @@ export const products: Product[] = [
     "description": "Experience the finest imported white peaches, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 32.85,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1928,7 +1928,7 @@ export const products: Product[] = [
     "description": "Experience the finest authentic black plums, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 27.93,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1951,7 +1951,7 @@ export const products: Product[] = [
     "description": "Experience the finest pure bing cherries, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 18.26,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1974,7 +1974,7 @@ export const products: Product[] = [
     "description": "Experience the finest organic concord grapes, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 28.58,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -1997,7 +1997,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged heirloom tomatoes, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 25.76,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -2020,7 +2020,7 @@ export const products: Product[] = [
     "description": "Experience the finest cold-pressed bell peppers, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 23.87,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -2043,7 +2043,7 @@ export const products: Product[] = [
     "description": "Experience the finest farm-fresh english cucumbers, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 11.68,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -2066,7 +2066,7 @@ export const products: Product[] = [
     "description": "Experience the finest heritage zucchini, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 37.96,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -2089,7 +2089,7 @@ export const products: Product[] = [
     "description": "Experience the finest authentic japanese eggplant, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 35.41,
     "images": [
-      "assets/images/dairy.jpg"
+      "https://images.unsplash.com/photo-1587486913049-53fc88980cfc?q=80&w=800"
     ],
     "category": "Dairy & Plant Milk",
     "subCategory": "Eggs",
@@ -2112,7 +2112,7 @@ export const products: Product[] = [
     "description": "Experience the finest wild-caught rainbow carrots, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 13.63,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -2135,7 +2135,7 @@ export const products: Product[] = [
     "description": "Experience the finest heritage russet potatoes, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 17.5,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -2158,7 +2158,7 @@ export const products: Product[] = [
     "description": "Experience the finest premium japanese sweet potatoes, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 7.32,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -2181,7 +2181,7 @@ export const products: Product[] = [
     "description": "Experience the finest cold-pressed vidalia onions, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 34.16,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -2204,7 +2204,7 @@ export const products: Product[] = [
     "description": "Experience the finest sustainable black garlic, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 19.17,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -2227,7 +2227,7 @@ export const products: Product[] = [
     "description": "Experience the finest heritage fresh ginger, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 16.29,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -2250,7 +2250,7 @@ export const products: Product[] = [
     "description": "Experience the finest farm-fresh turmeric root, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 10.34,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -2273,7 +2273,7 @@ export const products: Product[] = [
     "description": "Experience the finest pure cilantro, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 21.91,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -2296,7 +2296,7 @@ export const products: Product[] = [
     "description": "Experience the finest artisan italian parsley, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 8.77,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -2319,7 +2319,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged thai basil, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 30.82,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -2342,7 +2342,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged avocados, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 28.66,
     "images": [
-      "assets/images/vegetables.jpg"
+      "https://images.unsplash.com/photo-1610832958506-aa56368176cf?q=80&w=800"
     ],
     "category": "Fruits & Vegetables",
     "subCategory": "Fresh Fruits",
@@ -2365,7 +2365,7 @@ export const products: Product[] = [
     "description": "Experience the finest fresh whole milk, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 41.31,
     "images": [
-      "assets/images/dairy.jpg"
+      "https://images.unsplash.com/photo-1563636619-e9143da7973b?q=80&w=800"
     ],
     "category": "Dairy & Plant Milk",
     "subCategory": "Milk & Cream",
@@ -2388,7 +2388,7 @@ export const products: Product[] = [
     "description": "Experience the finest fresh french baguette, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 39.82,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800"
     ],
     "category": "Bakery & Bread",
     "subCategory": "Sliced Bread",
@@ -2411,7 +2411,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged coffee beans, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 29.33,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1559525839-b184a4d698c7?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Coffee & Tea",
@@ -2434,7 +2434,7 @@ export const products: Product[] = [
     "description": "Experience the finest gourmet saffron, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 34.36,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Spices & Baking",
@@ -2457,7 +2457,7 @@ export const products: Product[] = [
     "description": "Experience the finest authentic truffle oil, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 9.22,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1620853757579-22a7f5aedfa8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Oils & Vinegars",
@@ -2480,7 +2480,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged wagyu beef, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 45.63,
     "images": [
-      "assets/images/meat.jpg"
+      "https://images.unsplash.com/photo-1603048297172-c92544798d5e?q=80&w=800"
     ],
     "category": "Meat & Seafood",
     "subCategory": "Beef & Lamb",
@@ -2503,7 +2503,7 @@ export const products: Product[] = [
     "description": "Experience the finest handcrafted brie cheese, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 21.56,
     "images": [
-      "assets/images/dairy.jpg"
+      "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?q=80&w=800"
     ],
     "category": "Dairy & Plant Milk",
     "subCategory": "Cheese",
@@ -2526,7 +2526,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged croissants, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 10.55,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1509365465994-3e8a4a58d5dc?q=80&w=800"
     ],
     "category": "Bakery & Bread",
     "subCategory": "Pastries",
@@ -2549,7 +2549,7 @@ export const products: Product[] = [
     "description": "Experience the finest premium smoked salmon, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 14.78,
     "images": [
-      "assets/images/meat.jpg"
+      "https://images.unsplash.com/photo-1580476262798-b91c890e1bc0?q=80&w=800"
     ],
     "category": "Meat & Seafood",
     "subCategory": "Fresh Fish",
@@ -2572,7 +2572,7 @@ export const products: Product[] = [
     "description": "Experience the finest authentic macadamia nuts, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 48.28,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1579722821273-0f6c7d44362f?q=80&w=800"
     ],
     "category": "Snacks",
     "subCategory": "Nuts & Spreads",
@@ -2595,7 +2595,7 @@ export const products: Product[] = [
     "description": "Experience the finest cold-pressed manuka honey, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 15.16,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1589152144820-692b189e0b34?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Condiments & Spreads",
@@ -2618,7 +2618,7 @@ export const products: Product[] = [
     "description": "Experience the finest authentic matcha powder, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 22.77,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Coffee & Tea",
@@ -2641,7 +2641,7 @@ export const products: Product[] = [
     "description": "Experience the finest pure extra virgin olive oil, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 40.53,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1474979266404-7eaaca23c5ce?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Oils & Vinegars",
@@ -2664,7 +2664,7 @@ export const products: Product[] = [
     "description": "Experience the finest authentic balsamic vinegar, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 29.67,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1620853757579-22a7f5aedfa8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Oils & Vinegars",
@@ -2687,7 +2687,7 @@ export const products: Product[] = [
     "description": "Experience the finest farm-fresh almond butter, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 31.67,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1505253758473-96b7015fcd40?q=80&w=800"
     ],
     "category": "Snacks",
     "subCategory": "Nuts & Spreads",
@@ -2710,7 +2710,7 @@ export const products: Product[] = [
     "description": "Experience the finest organic quinoa, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 13.44,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1585239103980-eff7f2fd1303?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Grains & Pasta",
@@ -2733,7 +2733,7 @@ export const products: Product[] = [
     "description": "Experience the finest cold-pressed himalayan sea salt, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 21.59,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Spices & Baking",
@@ -2756,7 +2756,7 @@ export const products: Product[] = [
     "description": "Experience the finest cold-pressed vanilla beans, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 27.16,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Spices & Baking",
@@ -2779,7 +2779,7 @@ export const products: Product[] = [
     "description": "Experience the finest wild-caught maple syrup, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 49.04,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1510431198-83163e5e4fa4?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Condiments & Spreads",
@@ -2802,7 +2802,7 @@ export const products: Product[] = [
     "description": "Experience the finest organic kombucha, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 34.45,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1600271886742-f049cd451bba?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Juices",
@@ -2825,7 +2825,7 @@ export const products: Product[] = [
     "description": "Experience the finest pure dark chocolate, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 44.51,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1570335759755-f2d2dc0f49be?q=80&w=800"
     ],
     "category": "Snacks",
     "subCategory": "Sweets",
@@ -2848,7 +2848,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged sencha green tea, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 30.39,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1559525839-b184a4d698c7?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Coffee & Tea",
@@ -2871,7 +2871,7 @@ export const products: Product[] = [
     "description": "Experience the finest farm-fresh ribeye steak, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 17.53,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1544787219-7f47ccb76574?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Coffee & Tea",
@@ -2894,7 +2894,7 @@ export const products: Product[] = [
     "description": "Experience the finest wild-caught lobster tails, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 12.9,
     "images": [
-      "assets/images/meat.jpg"
+      "https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?q=80&w=800"
     ],
     "category": "Meat & Seafood",
     "subCategory": "Fresh Fish",
@@ -2917,7 +2917,7 @@ export const products: Product[] = [
     "description": "Experience the finest premium beluga caviar, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 35.3,
     "images": [
-      "assets/images/meat.jpg"
+      "https://images.unsplash.com/photo-1580476262798-b91c890e1bc0?q=80&w=800"
     ],
     "category": "Meat & Seafood",
     "subCategory": "Fresh Fish",
@@ -2940,7 +2940,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged prosciutto di parma, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 7.17,
     "images": [
-      "assets/images/meat.jpg"
+      "https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=800"
     ],
     "category": "Meat & Seafood",
     "subCategory": "Beef & Lamb",
@@ -2963,7 +2963,7 @@ export const products: Product[] = [
     "description": "Experience the finest fresh parmigiano reggiano, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 32,
     "images": [
-      "assets/images/dairy.jpg"
+      "https://images.unsplash.com/photo-1452195100486-9cc805987862?q=80&w=800"
     ],
     "category": "Dairy & Plant Milk",
     "subCategory": "Cheese",
@@ -2986,7 +2986,7 @@ export const products: Product[] = [
     "description": "Experience the finest premium basmati rice, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 12.45,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1551228400-f926715f45cd?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Grains & Pasta",
@@ -3009,7 +3009,7 @@ export const products: Product[] = [
     "description": "Experience the finest fresh linguine pasta, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 33.03,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1585239103980-eff7f2fd1303?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Grains & Pasta",
@@ -3032,7 +3032,7 @@ export const products: Product[] = [
     "description": "Experience the finest gourmet basil pesto, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 20.37,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1589152144820-692b189e0b34?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Condiments & Spreads",
@@ -3055,7 +3055,7 @@ export const products: Product[] = [
     "description": "Experience the finest fresh oat milk, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 43.5,
     "images": [
-      "assets/images/dairy.jpg"
+      "https://images.unsplash.com/photo-1528750717929-32abb73d3bd9?q=80&w=800"
     ],
     "category": "Dairy & Plant Milk",
     "subCategory": "Milk & Cream",
@@ -3078,7 +3078,7 @@ export const products: Product[] = [
     "description": "Experience the finest pure greek yogurt, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 5.87,
     "images": [
-      "assets/images/dairy.jpg"
+      "https://images.unsplash.com/photo-1511690743698-d0d8ec889b70?q=80&w=800"
     ],
     "category": "Dairy & Plant Milk",
     "subCategory": "Yogurt",
@@ -3101,7 +3101,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged blueberries, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 13.89,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3124,7 +3124,7 @@ export const products: Product[] = [
     "description": "Experience the finest wild-caught strawberries, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 43.72,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3147,7 +3147,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged raspberries, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 9.81,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3170,7 +3170,7 @@ export const products: Product[] = [
     "description": "Experience the finest premium blackberries, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 19.09,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3193,7 +3193,7 @@ export const products: Product[] = [
     "description": "Experience the finest artisan alphonso mangoes, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 40.68,
     "images": [
-      "assets/images/vegetables.jpg"
+      "https://images.unsplash.com/photo-1519999482648-25049ddd3d1f?q=80&w=800"
     ],
     "category": "Fruits & Vegetables",
     "subCategory": "Fresh Fruits",
@@ -3216,7 +3216,7 @@ export const products: Product[] = [
     "description": "Experience the finest gourmet pineapple, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 38.47,
     "images": [
-      "assets/images/vegetables.jpg"
+      "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?q=80&w=800"
     ],
     "category": "Fruits & Vegetables",
     "subCategory": "Fresh Fruits",
@@ -3239,7 +3239,7 @@ export const products: Product[] = [
     "description": "Experience the finest imported pomegranates, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 42.49,
     "images": [
-      "assets/images/vegetables.jpg"
+      "https://images.unsplash.com/photo-1560806887-1e4cd0b6bcc6?q=80&w=800"
     ],
     "category": "Fruits & Vegetables",
     "subCategory": "Fresh Fruits",
@@ -3262,7 +3262,7 @@ export const products: Product[] = [
     "description": "Experience the finest grass-fed coconut water, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 9.7,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1523362628745-0c100150b504?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Water",
@@ -3285,7 +3285,7 @@ export const products: Product[] = [
     "description": "Experience the finest fresh sparkling mineral water, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 44.86,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1523362628745-0c100150b504?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Water",
@@ -3308,7 +3308,7 @@ export const products: Product[] = [
     "description": "Experience the finest grass-fed orange juice, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 47.76,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Juices",
@@ -3331,7 +3331,7 @@ export const products: Product[] = [
     "description": "Experience the finest wild-caught apple cider, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 26.96,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1600271886742-f049cd451bba?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Juices",
@@ -3354,7 +3354,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged ginger kombucha, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 40.46,
     "images": [
-      "assets/images/beverages.jpg"
+      "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?q=80&w=800"
     ],
     "category": "Beverages",
     "subCategory": "Juices",
@@ -3377,7 +3377,7 @@ export const products: Product[] = [
     "description": "Experience the finest gourmet macadamia milk, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 34,
     "images": [
-      "assets/images/dairy.jpg"
+      "https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=800"
     ],
     "category": "Dairy & Plant Milk",
     "subCategory": "Milk & Cream",
@@ -3400,7 +3400,7 @@ export const products: Product[] = [
     "description": "Experience the finest fresh soy milk, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 6.65,
     "images": [
-      "assets/images/dairy.jpg"
+      "https://images.unsplash.com/photo-1563636619-e9143da7973b?q=80&w=800"
     ],
     "category": "Dairy & Plant Milk",
     "subCategory": "Milk & Cream",
@@ -3423,7 +3423,7 @@ export const products: Product[] = [
     "description": "Experience the finest sustainable cultured butter, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 24.49,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1579722821273-0f6c7d44362f?q=80&w=800"
     ],
     "category": "Snacks",
     "subCategory": "Nuts & Spreads",
@@ -3446,7 +3446,7 @@ export const products: Product[] = [
     "description": "Experience the finest wild-caught free-range eggs, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 45.73,
     "images": [
-      "assets/images/dairy.jpg"
+      "https://images.unsplash.com/photo-1506976785307-8732e854ad03?q=80&w=800"
     ],
     "category": "Dairy & Plant Milk",
     "subCategory": "Eggs",
@@ -3469,7 +3469,7 @@ export const products: Product[] = [
     "description": "Experience the finest farm-fresh sourdough boule, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 42.18,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1598373182133-52452f7691ed?q=80&w=800"
     ],
     "category": "Bakery & Bread",
     "subCategory": "Sliced Bread",
@@ -3492,7 +3492,7 @@ export const products: Product[] = [
     "description": "Experience the finest heritage ciabatta bread, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 47.41,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800"
     ],
     "category": "Bakery & Bread",
     "subCategory": "Sliced Bread",
@@ -3515,7 +3515,7 @@ export const products: Product[] = [
     "description": "Experience the finest premium focaccia, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 44.62,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3538,7 +3538,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged pita bread, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 42.9,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3561,7 +3561,7 @@ export const products: Product[] = [
     "description": "Experience the finest heritage corn tortillas, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 21.04,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3584,7 +3584,7 @@ export const products: Product[] = [
     "description": "Experience the finest cold-pressed classic hummus, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 36.16,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1505253758473-96b7015fcd40?q=80&w=800"
     ],
     "category": "Snacks",
     "subCategory": "Nuts & Spreads",
@@ -3607,7 +3607,7 @@ export const products: Product[] = [
     "description": "Experience the finest pure spicy guacamole, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 44.9,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3630,7 +3630,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged roasted salsa, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 39.28,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3653,7 +3653,7 @@ export const products: Product[] = [
     "description": "Experience the finest authentic pecans, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 18.59,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1579722821273-0f6c7d44362f?q=80&w=800"
     ],
     "category": "Snacks",
     "subCategory": "Nuts & Spreads",
@@ -3676,7 +3676,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged english walnuts, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 17.99,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1505253758473-96b7015fcd40?q=80&w=800"
     ],
     "category": "Snacks",
     "subCategory": "Nuts & Spreads",
@@ -3699,7 +3699,7 @@ export const products: Product[] = [
     "description": "Experience the finest gourmet roasted cashews, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 18.39,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1579722821273-0f6c7d44362f?q=80&w=800"
     ],
     "category": "Snacks",
     "subCategory": "Nuts & Spreads",
@@ -3722,7 +3722,7 @@ export const products: Product[] = [
     "description": "Experience the finest imported shelled pistachios, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 14,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3745,7 +3745,7 @@ export const products: Product[] = [
     "description": "Experience the finest authentic marcona almonds, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 34.95,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3768,7 +3768,7 @@ export const products: Product[] = [
     "description": "Experience the finest wild-caught chia seeds, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 11.96,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3791,7 +3791,7 @@ export const products: Product[] = [
     "description": "Experience the finest farm-fresh golden flax seeds, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 32.47,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3814,7 +3814,7 @@ export const products: Product[] = [
     "description": "Experience the finest artisan hemp hearts, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 26.53,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3837,7 +3837,7 @@ export const products: Product[] = [
     "description": "Experience the finest heritage rolled oats, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 7.18,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3860,7 +3860,7 @@ export const products: Product[] = [
     "description": "Experience the finest authentic artisan granola, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 44.99,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3883,7 +3883,7 @@ export const products: Product[] = [
     "description": "Experience the finest wild-caught swiss muesli, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 7.47,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3906,7 +3906,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged vegan protein powder, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 30.65,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3929,7 +3929,7 @@ export const products: Product[] = [
     "description": "Experience the finest grass-fed collagen peptides, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 33.09,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3952,7 +3952,7 @@ export const products: Product[] = [
     "description": "Experience the finest grass-fed dried goji berries, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 21.99,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3975,7 +3975,7 @@ export const products: Product[] = [
     "description": "Experience the finest authentic acai puree, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 19.54,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -3998,7 +3998,7 @@ export const products: Product[] = [
     "description": "Experience the finest wild-caught pink dragon fruit, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 8.95,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4021,7 +4021,7 @@ export const products: Product[] = [
     "description": "Experience the finest cold-pressed golden kiwi, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 49.44,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4044,7 +4044,7 @@ export const products: Product[] = [
     "description": "Experience the finest cold-pressed papaya, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 11.45,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4067,7 +4067,7 @@ export const products: Product[] = [
     "description": "Experience the finest artisan key lime, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 30.61,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4090,7 +4090,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged meyer lemon, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 39.5,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4113,7 +4113,7 @@ export const products: Product[] = [
     "description": "Experience the finest wild-caught ruby red grapefruit, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 35.67,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4136,7 +4136,7 @@ export const products: Product[] = [
     "description": "Experience the finest fresh navel oranges, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 49.26,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4159,7 +4159,7 @@ export const products: Product[] = [
     "description": "Experience the finest cold-pressed fuji apples, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 43.87,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4182,7 +4182,7 @@ export const products: Product[] = [
     "description": "Experience the finest heritage bartlett pears, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 49.46,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4205,7 +4205,7 @@ export const products: Product[] = [
     "description": "Experience the finest organic white peaches, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 23.23,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4228,7 +4228,7 @@ export const products: Product[] = [
     "description": "Experience the finest farm-fresh black plums, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 24.31,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4251,7 +4251,7 @@ export const products: Product[] = [
     "description": "Experience the finest farm-fresh bing cherries, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 48.82,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4274,7 +4274,7 @@ export const products: Product[] = [
     "description": "Experience the finest handcrafted concord grapes, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 31.87,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4297,7 +4297,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged heirloom tomatoes, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 46.92,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4320,7 +4320,7 @@ export const products: Product[] = [
     "description": "Experience the finest grass-fed bell peppers, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 49.8,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4343,7 +4343,7 @@ export const products: Product[] = [
     "description": "Experience the finest wild-caught english cucumbers, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 9.53,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4366,7 +4366,7 @@ export const products: Product[] = [
     "description": "Experience the finest heritage zucchini, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 31.91,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4389,7 +4389,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged japanese eggplant, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 47.68,
     "images": [
-      "assets/images/dairy.jpg"
+      "https://images.unsplash.com/photo-1587486913049-53fc88980cfc?q=80&w=800"
     ],
     "category": "Dairy & Plant Milk",
     "subCategory": "Eggs",
@@ -4412,7 +4412,7 @@ export const products: Product[] = [
     "description": "Experience the finest wild-caught rainbow carrots, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 5.74,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4435,7 +4435,7 @@ export const products: Product[] = [
     "description": "Experience the finest aged russet potatoes, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 32.54,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4458,7 +4458,7 @@ export const products: Product[] = [
     "description": "Experience the finest grass-fed japanese sweet potatoes, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 47.91,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4481,7 +4481,7 @@ export const products: Product[] = [
     "description": "Experience the finest heritage vidalia onions, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 42.94,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4504,7 +4504,7 @@ export const products: Product[] = [
     "description": "Experience the finest wild-caught black garlic, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 30.55,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4527,7 +4527,7 @@ export const products: Product[] = [
     "description": "Experience the finest grass-fed fresh ginger, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 31,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4550,7 +4550,7 @@ export const products: Product[] = [
     "description": "Experience the finest premium turmeric root, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 11.57,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4573,7 +4573,7 @@ export const products: Product[] = [
     "description": "Experience the finest imported cilantro, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 31.84,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4596,7 +4596,7 @@ export const products: Product[] = [
     "description": "Experience the finest sustainable italian parsley, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 30.45,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",
@@ -4619,7 +4619,7 @@ export const products: Product[] = [
     "description": "Experience the finest heritage thai basil, carefully sourced for international standards to bring unparalleled quality to your table.",
     "price": 36.7,
     "images": [
-      "assets/images/grocery-generic.jpg"
+      "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?q=80&w=800"
     ],
     "category": "Pantry & Gourmet",
     "subCategory": "Other",

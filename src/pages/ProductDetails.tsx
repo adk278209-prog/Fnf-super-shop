@@ -91,6 +91,7 @@ export function ProductDetails() {
                 src={product.images[activeImage]} 
                 alt={product.name} 
                 className="w-full h-full object-cover"
+                onError={(e) => { e.currentTarget.src = `https://placehold.co/500x500/eaeaea/888888/jpg?text=${encodeURIComponent(product.name)}`; }}
               />
             </div>
             {product.images.length > 1 && (

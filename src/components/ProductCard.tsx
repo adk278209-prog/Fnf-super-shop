@@ -69,6 +69,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           src={product.images[0]} 
           alt={product.name}
           className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+          onError={(e) => { e.currentTarget.src = `https://placehold.co/500x500/eaeaea/888888/jpg?text=${encodeURIComponent(product.name)}`; }}
         />
         {/* Quick Add overlay */}
 
